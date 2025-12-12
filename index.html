@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RAYX — Light, Explained</title>
+  <meta name="description" content="RAYX turns satellite light into atmospherically corrected, harmonised Earth data for agriculture, food security, land and climate analytics." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Cpath d='M16 44L30 20L26 14H18L12 24L16 30L10 40L16 44Z' fill='%23d6ff6b'/%3E%3Cpath d='M30 20L40 36L36 44H26L22 38L30 20Z' fill='%2361e4ff'/%3E%3Cpath d='M40 36L46 26L40 20L34 30L40 36Z' fill='%23ffffff'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">R</span>
+        <span class="logo-text">RAYX</span>
+      </a>
+      <nav class="nav">
+        <a href="#what-we-do">What we do</a>
+        <a href="#technology">Technology</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Satellite data, actually usable</p>
+          <h1>RAYX turns<br />light into insight.</h1>
+          <p class="hero-subtitle">
+            Analysis-ready satellite data for agriculture, food security and land monitoring —
+            built on radiative transfer, sensor-invariant atmospheric correction and hyperspectral analytics.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Talk to us</a>
+            <a href="#technology" class="btn ghost">Explore the tech</a>
+          </div>
+          <div class="hero-tags">
+            <span>Sentinel-2</span>
+            <span>Hyperspectral</span>
+            <span>Radiative transfer</span>
+            <span>Atmospheric correction</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-badge">Demo concept</div>
+            <h2>From raw radiance<br />to surface reflectance</h2>
+            <p>
+              RAYX ingests multi-sensor imagery, applies SIAC-style atmospheric correction and
+              outputs harmonised, uncertainty-aware surface reflectance.
+            </p>
+            <div class="hero-metrics">
+              <div class="metric">
+                <span class="metric-label">Sensors</span>
+                <span class="metric-value">Sentinel-2, Landsat, hyperspectral</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Outputs</span>
+                <span class="metric-value">SR, albedo, biophysical variables</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Use cases</span>
+                <span class="metric-value">Crops, food security, land &amp; climate</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-orbit">
+            <div class="orbit-planet"></div>
+            <div class="orbit-sat orbit-sat-1"></div>
+            <div class="orbit-sat orbit-sat-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section id="what-we-do" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>What RAYX does</h2>
+          <p>
+            We sit between raw satellite data and your models, so you never have to worry about
+            atmospheric correction, cross-sensor harmonisation or radiative-transfer details again.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Analysis-ready data</h3>
+            <p>
+              RAYX delivers atmospherically corrected, cloud-screened, sensor-invariant products
+              — ready for crop models, yield forecasting, and land-use analytics.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Physics-aware processing</h3>
+            <p>
+              We use radiative transfer, SIAC-style atmospheric correction and hyperspectral techniques
+              to keep your inputs physically meaningful, not just statistically convenient.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Multi-sensor, multi-scale</h3>
+            <p>
+              From Sentinel-2 to next-generation hyperspectral sensors, RAYX harmonises data across time,
+              space and sensor, so you can build robust, long-term applications.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section id="technology" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>The RAYX pipeline</h2>
+          <p>
+            A modular, physics-based chain for taking satellite light all the way to biophysical variables
+            and decision-ready indicators.
+          </p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-step">
+            <h3>1. Ingest &amp; QA</h3>
+            <p>
+              Multi-mission satellite data (e.g. Sentinel-2) ingested, quality-flagged and co-registered with
+              meteorological and ancillary datasets.
+            </p>
+          </div>
+          <div class="tech-step">
+            <h3>2. Atmospheric correction</h3>
+            <p>
+              Sensor-invariant atmospheric correction with radiative transfer under the hood:
+              aerosol, water vapour and BRDF effects accounted for, not ignored.
+            </p>
+          </div>
+          <div class="tech-step">
+            <h3>3. Harmonisation</h3>
+            <p>
+              Spectral and spatial harmonisation across sensors and over time, producing stable surface
+              reflectance archives for downstream analytics.
+            </p>
+          </div>
+          <div class="tech-step">
+            <h3>4. Biophysical retrievals</h3>
+            <p>
+              Retrieval of crop and vegetation variables (LAI, fAPAR, biomass proxies) and other land
+              indicators relevant to food security and climate applications.
+            </p>
+          </div>
+          <div class="tech-step">
+            <h3>5. Delivery &amp; integration</h3>
+            <p>
+              Products delivered via simple APIs or object storage, ready to plug into your modelling,
+              dashboards or decision workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section id="use-cases" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Where RAYX is used</h2>
+          <p>
+            Same physics-based core, tailored for different sectors that depend on reliable Earth observation.
+          </p>
+        </div>
+        <div class="cards cards-wide">
+          <article class="card">
+            <h3>Agriculture &amp; food security</h3>
+            <p>
+              Monitor crop condition, stress and yield risk from field to region. Support early-warning systems,
+              input optimisation and food-security assessments.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Land &amp; ecosystems</h3>
+            <p>
+              Track vegetation dynamics, land degradation and restoration outcomes with consistent, long-term
+              surface reflectance and biophysical indicators.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Climate &amp; risk analytics</h3>
+            <p>
+              Feed climate-risk models, insurance products and ESG reporting with harmonised, physically
+              grounded EO inputs rather than ad-hoc composites.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <div class="section-header">
+            <h2>About RAYX</h2>
+          </div>
+          <p>
+            RAYX is built around a simple idea: satellite light is rich, but messy. Turning it into
+            something trustworthy takes atmospheric correction, radiative transfer and careful harmonisation — not just
+            another black-box model.
+          </p>
+          <p>
+            We bring together experience in Earth observation, radiative transfer modelling, hyperspectral analysis
+            and food-security applications to create a stable foundation layer for anyone building on satellite data.
+          </p>
+        </div>
+        <div class="about-highlight">
+          <h3>Focus areas</h3>
+          <ul>
+            <li>Analysis-ready satellite data (ARD) pipelines</li>
+            <li>Sensor-invariant atmospheric correction (SIAC-style)</li>
+            <li>Sentinel-2 and hyperspectral missions</li>
+            <li>Crop and vegetation biophysical retrievals</li>
+            <li>Food-security and climate-risk use cases</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Let’s talk</h2>
+          <p>
+            Whether you're building an EO product, a food-security system or a research pipeline, RAYX can be
+            the layer that makes satellite light reliable.
+          </p>
+        </div>
+        <div class="contact-box">
+          <p>
+            Drop us a message with a few lines about your use case, and we’ll get back to you.
+          </p>
+          <a class="btn primary" href="mailto:hello@rayx.co.uk?subject=RAYX%20Enquiry">
+            Email hello@rayx.co.uk
+          </a>
+          <p class="contact-note">
+            Custom integrations, collaborations and pilot projects welcome.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="logo-text">RAYX</span>
+        <span class="footer-tagline">Light, explained.</span>
+      </div>
+      <div class="footer-right">
+        <span>© <span id="year"></span> RAYX Ltd</span>
+        <span>rayx.co.uk</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
