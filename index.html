@@ -6,13 +6,14 @@
   <title>RAYX — Light, Explained</title>
   <meta name="description" content="RAYX turns satellite light into atmospherically corrected, harmonised Earth data for agriculture, food security, land and climate analytics." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Cpath d='M16 44L30 20L26 14H18L12 24L16 30L10 40L16 44Z' fill='%23d6ff6b'/%3E%3Cpath d='M30 20L40 36L36 44H26L22 38L30 20Z' fill='%2361e4ff'/%3E%3Cpath d='M40 36L46 26L40 20L34 30L40 36Z' fill='%23ffffff'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
       <a href="#top" class="logo">
-        <span class="logo-mark">R</span>
+        <span class="logo-mark" aria-hidden="true"></span>
         <span class="logo-text">RAYX</span>
       </a>
       <nav class="nav">
@@ -33,13 +34,14 @@
           <p class="eyebrow">Satellite data, actually usable</p>
           <h1>RAYX turns<br />light into insight.</h1>
           <p class="hero-subtitle">
-            Analysis-ready satellite data for agriculture, food security and land monitoring —
-            built on radiative transfer, sensor-invariant atmospheric correction and hyperspectral analytics.
+            Analysis-ready satellite data for agriculture, food security, and land monitoring —
+            powered by radiative transfer, sensor-invariant atmospheric correction, and hyperspectral analytics.
           </p>
           <div class="hero-actions">
             <a href="#contact" class="btn primary">Talk to us</a>
             <a href="#technology" class="btn ghost">Explore the tech</a>
           </div>
+          <p class="hero-note">A physics-first EO layer for teams who want reliable inputs—not surprises.</p>
           <div class="hero-tags">
             <span>Sentinel-2</span>
             <span>Hyperspectral</span>
@@ -50,7 +52,7 @@
         <div class="hero-visual">
           <div class="hero-card">
             <div class="hero-badge">Demo concept</div>
-            <h2>From raw radiance<br />to surface reflectance</h2>
+            <h2>Radiance → Surface Reflectance</h2>
             <p>
               RAYX ingests multi-sensor imagery, applies SIAC-style atmospheric correction and
               outputs harmonised, uncertainty-aware surface reflectance.
@@ -70,10 +72,63 @@
               </div>
             </div>
           </div>
-          <div class="hero-orbit">
-            <div class="orbit-planet"></div>
-            <div class="orbit-sat orbit-sat-1"></div>
-            <div class="orbit-sat orbit-sat-2"></div>
+          <div class="hero-flow" role="group" aria-label="Radiative transfer pipeline stages">
+            <ol class="flow-steps">
+              <li class="flow-step">
+                <div class="flow-marker" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 20h16"></path>
+                    <path d="M6 16c0-3.3 2.7-6 6-6s6 2.7 6 6"></path>
+                    <path d="M9 16c0-1.7 1.3-3 3-3s3 1.3 3 3"></path>
+                    <circle cx="12" cy="16" r="1"></circle>
+                  </svg>
+                </div>
+                <div class="flow-content">
+                  <div class="flow-kicker">Sensor</div>
+                  <div class="flow-name">Raw radiance</div>
+                  <p class="flow-desc">Top-of-atmosphere measurements (L1/TOA) from multiple missions.</p>
+                </div>
+              </li>
+              <li class="flow-step">
+                <div class="flow-marker" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 10a4 4 0 0 0-8 0"></path>
+                    <path d="M6 14a4 4 0 0 0 4 4h8a4 4 0 0 0 0-8"></path>
+                  </svg>
+                </div>
+                <div class="flow-content">
+                  <div class="flow-kicker">Atmosphere</div>
+                  <div class="flow-name">Scattering &amp; absorption</div>
+                  <p class="flow-desc">Aerosols, water vapour and gases shape what the sensor sees.</p>
+                </div>
+              </li>
+              <li class="flow-step">
+                <div class="flow-marker" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="4 14 8 10 12 14 16 6 20 10"></polyline>
+                    <path d="M4 18h16"></path>
+                  </svg>
+                </div>
+                <div class="flow-content">
+                  <div class="flow-kicker">Radiative transfer</div>
+                  <div class="flow-name">Physics correction</div>
+                  <p class="flow-desc">Forward model + inversion solves aerosols/BRDF and propagates uncertainty.</p>
+                </div>
+              </li>
+              <li class="flow-step">
+                <div class="flow-marker" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 12l2 2 4-4"></path>
+                    <circle cx="12" cy="12" r="9"></circle>
+                  </svg>
+                </div>
+                <div class="flow-content">
+                  <div class="flow-kicker">Output</div>
+                  <div class="flow-name">Surface reflectance</div>
+                  <p class="flow-desc">Harmonised SR/albedo, ready for crop, land and climate analytics.</p>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -91,6 +146,9 @@
         </div>
         <div class="cards">
           <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
             <h3>Analysis-ready data</h3>
             <p>
               RAYX delivers atmospherically corrected, cloud-screened, sensor-invariant products
@@ -98,6 +156,9 @@
             </p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+            </div>
             <h3>Physics-aware processing</h3>
             <p>
               We use radiative transfer, SIAC-style atmospheric correction and hyperspectral techniques
@@ -105,6 +166,9 @@
             </p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"></path><path d="M2 12l5-5"></path><path d="M2 12l5 5"></path><path d="M22 12l-5-5"></path><path d="M22 12l-5 5"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
             <h3>Multi-sensor, multi-scale</h3>
             <p>
               From Sentinel-2 to next-generation hyperspectral sensors, RAYX harmonises data across time,
@@ -176,6 +240,9 @@
         </div>
         <div class="cards cards-wide">
           <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
             <h3>Agriculture &amp; food security</h3>
             <p>
               Monitor crop condition, stress and yield risk from field to region. Support early-warning systems,
@@ -183,6 +250,9 @@
             </p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path></svg>
+            </div>
             <h3>Land &amp; ecosystems</h3>
             <p>
               Track vegetation dynamics, land degradation and restoration outcomes with consistent, long-term
@@ -190,6 +260,9 @@
             </p>
           </article>
           <article class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path></svg>
+            </div>
             <h3>Climate &amp; risk analytics</h3>
             <p>
               Feed climate-risk models, insurance products and ESG reporting with harmonised, physically
