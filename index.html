@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
@@ -10,347 +10,233 @@
 
     gtag('config', 'G-WXYYG3BB6R');
   </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RAYX — Light, Explained</title>
-  <meta name="description" content="RAYX turns satellite light into atmospherically corrected, harmonised Earth data for agriculture, food security, land and climate analytics." />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+<title>RayX | Earth observation products: reflectance, models, yield intelligence</title>
+<meta name="description" content="RayX builds earth observation products including SIAC (reflectance), ARC (agriculture foundation models), and Yield (yield intelligence).">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#top">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="logo">
-        <span class="logo-mark" aria-hidden="true"></span>
-        <span class="logo-text">RAYX</span>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="/favicon.png" alt="RayX logo">
+      <span class="brand-name">RayX</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="navlinks" class="nav-links" aria-label="Primary">
+      <a href="/products/siac.html">SIAC</a>
+      <a href="/products/arc.html">ARC</a>
+      <a href="/products/yield.html">Yield</a>
+      <a href="/technology.html">Technology</a>
+      <a href="/use-cases.html">Use cases</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">RayX Earth Observation</div>
+      <h1>From satellite light to decision-ready signals.</h1>
+      <p>
+        <strong>SIAC</strong> harmonises surface reflectance across sensors.
+        <strong>ARC</strong> translates EO light into crop states.
+        <strong>Yield</strong> delivers yield estimation and early forecasting.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#products">Explore products</a>
+        <a class="btn" href="/technology.html">How it works</a>
+      </div>
+
+      <div class="badge-row">
+        <span class="badge">CEOS ARD-aligned reflectance</span>
+        <span class="badge">Calibration + validation</span>
+        <span class="badge">Independent product lines</span>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="pill">Product suite</div>
+      <h3 style="margin-top:10px">Use one product or combine them.</h3>
+
+      <div class="grid2" style="margin-top:12px">
+        <a class="kpi" href="/products/siac.html">
+          <div class="big">SIAC</div>
+          <div class="muted small">Surface reflectance harmonisation across sensors</div>
+        </a>
+        <a class="kpi" href="/products/arc.html">
+          <div class="big">ARC</div>
+          <div class="muted small">Agriculture foundation model: light → crop states</div>
+        </a>
+        <a class="kpi" href="/products/yield.html">
+          <div class="big">Yield</div>
+          <div class="muted small">Yield estimation + 2–3 month forecasting</div>
+        </a>
+        <a class="kpi" href="/technology.html#delivery">
+          <div class="big">Delivery</div>
+          <div class="muted small">Dataset, batch processing, or API integration</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="section">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <div class="kicker">Products</div>
+        <h2>Three products. Clear scopes.</h2>
+      </div>
+      <a class="btn btn-sm" href="/technology.html">How it works</a>
+    </div>
+
+    <div class="grid3">
+      <a class="card" href="/products/siac.html">
+        <div class="pill">RayX — SIAC</div>
+        <h3 style="margin-top:10px">Sensor-invariant surface reflectance.</h3>
+        <p class="muted">Accurate, consistent SR from multispectral → hyperspectral, aligned with CEOS ARD expectations.</p>
+        <ul>
+          <li>Radiometric calibration & validation</li>
+          <li>Cross-sensor comparability for time-series</li>
+          <li>QA + traceability</li>
+        </ul>
       </a>
-      <nav class="nav">
-        <a href="#what-we-do">What we do</a>
-        <a href="#technology">Technology</a>
-        <a href="#use-cases">Use cases</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
+
+      <a class="card" href="/products/arc.html">
+        <div class="pill">RayX — ARC</div>
+        <h3 style="margin-top:10px">Agriculture foundation models.</h3>
+        <p class="muted">Physics + biology-guided translation from EO light signals to crop properties through the season.</p>
+        <ul>
+          <li>Robust biophysical estimation</li>
+          <li>Near real-time growth monitoring</li>
+          <li>Improves on vegetation indices</li>
+        </ul>
+      </a>
+
+      <a class="card" href="/products/yield.html">
+        <div class="pill">RayX — Yield</div>
+        <h3 style="margin-top:10px">Yield intelligence.</h3>
+        <p class="muted">Field-level yield estimation and 2–3 month ahead yield prediction with factor attribution.</p>
+        <ul>
+          <li>8+ years of yield records (where available)</li>
+          <li>Yield-limiting factor identification</li>
+          <li>Signals for trading & insurance</li>
+        </ul>
+      </a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Satellite data, actually usable</p>
-          <h1>RAYX turns<br />light into insight.</h1>
-          <p class="hero-subtitle">
-            Analysis-ready satellite data for agriculture, food security, and land monitoring —
-            powered by radiative transfer, sensor-invariant atmospheric correction, and hyperspectral analytics.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn primary">Talk to us</a>
-            <a href="#technology" class="btn ghost">Explore the tech</a>
-          </div>
-          <p class="hero-note">A physics-first EO layer for teams who want reliable inputs—not surprises.</p>
-          <div class="hero-tags">
-            <span>Sentinel-2</span>
-            <span>Hyperspectral</span>
-            <span>Radiative transfer</span>
-            <span>Atmospheric correction</span>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-card">
-            <div class="hero-badge">Demo concept</div>
-            <h2>Radiance → Surface Reflectance</h2>
-            <p>
-              RAYX ingests multi-sensor imagery, applies SIAC-style atmospheric correction and
-              outputs harmonised, uncertainty-aware surface reflectance.
-            </p>
-            <div class="hero-metrics">
-              <div class="metric">
-                <span class="metric-label">Sensors</span>
-                <span class="metric-value">Sentinel-2, Landsat, hyperspectral</span>
-              </div>
-              <div class="metric">
-                <span class="metric-label">Outputs</span>
-                <span class="metric-value">SR, albedo, biophysical variables</span>
-              </div>
-              <div class="metric">
-                <span class="metric-label">Use cases</span>
-                <span class="metric-value">Crops, food security, land &amp; climate</span>
-              </div>
-            </div>
-          </div>
-          <div class="hero-flow" role="group" aria-label="Radiative transfer pipeline stages">
-            <ol class="flow-steps">
-              <li class="flow-step">
-                <div class="flow-marker" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 20h16"></path>
-                    <path d="M6 16c0-3.3 2.7-6 6-6s6 2.7 6 6"></path>
-                    <path d="M9 16c0-1.7 1.3-3 3-3s3 1.3 3 3"></path>
-                    <circle cx="12" cy="16" r="1"></circle>
-                  </svg>
-                </div>
-                <div class="flow-content">
-                  <div class="flow-kicker">Sensor</div>
-                  <div class="flow-name">Raw radiance</div>
-                  <p class="flow-desc">Top-of-atmosphere measurements (L1/TOA) from multiple missions.</p>
-                </div>
-              </li>
-              <li class="flow-step">
-                <div class="flow-marker" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 10a4 4 0 0 0-8 0"></path>
-                    <path d="M6 14a4 4 0 0 0 4 4h8a4 4 0 0 0 0-8"></path>
-                  </svg>
-                </div>
-                <div class="flow-content">
-                  <div class="flow-kicker">Atmosphere</div>
-                  <div class="flow-name">Scattering &amp; absorption</div>
-                  <p class="flow-desc">Aerosols, water vapour and gases shape what the sensor sees.</p>
-                </div>
-              </li>
-              <li class="flow-step">
-                <div class="flow-marker" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="4 14 8 10 12 14 16 6 20 10"></polyline>
-                    <path d="M4 18h16"></path>
-                  </svg>
-                </div>
-                <div class="flow-content">
-                  <div class="flow-kicker">Radiative transfer</div>
-                  <div class="flow-name">Physics correction</div>
-                  <p class="flow-desc">Forward model + inversion solves aerosols/BRDF and propagates uncertainty.</p>
-                </div>
-              </li>
-              <li class="flow-step">
-                <div class="flow-marker" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 12l2 2 4-4"></path>
-                    <circle cx="12" cy="12" r="9"></circle>
-                  </svg>
-                </div>
-                <div class="flow-content">
-                  <div class="flow-kicker">Output</div>
-                  <div class="flow-name">Surface reflectance</div>
-                  <p class="flow-desc">Harmonised SR/albedo, ready for crop, land and climate analytics.</p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
+<section class="section tight">
+  <div class="container callout">
+    <div class="left">
+      <div class="kicker">Positioning</div>
+      <h2>A product suite — not a single vertical.</h2>
+      <p class="muted">
+        SIAC is a general EO calibration product for reflectance consistency.
+        ARC and Yield are agriculture products built on top of stable inputs.
+        You can use each component independently.
+      </p>
+    </div>
+    <div class="right">
+      <a class="btn btn-primary" href="/use-cases.html">See use cases</a>
+      <a class="btn" href="/technology.html">Technology</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <div class="kicker">Applications</div>
+        <h2>Where teams use RayX products.</h2>
       </div>
-    </section>
+    </div>
 
-    <!-- WHAT WE DO -->
-    <section id="what-we-do" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>What RAYX does</h2>
-          <p>
-            We sit between raw satellite data and your models, so you never have to worry about
-            atmospheric correction, cross-sensor harmonisation or radiative-transfer details again.
-          </p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-            </div>
-            <h3>Analysis-ready data</h3>
-            <p>
-              RAYX delivers atmospherically corrected, cloud-screened, sensor-invariant products
-              — ready for crop models, yield forecasting, and land-use analytics.
-            </p>
-          </article>
-          <article class="card">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-            </div>
-            <h3>Physics-aware processing</h3>
-            <p>
-              We use radiative transfer, SIAC-style atmospheric correction and hyperspectral techniques
-              to keep your inputs physically meaningful, not just statistically convenient.
-            </p>
-          </article>
-          <article class="card">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"></path><path d="M2 12l5-5"></path><path d="M2 12l5 5"></path><path d="M22 12l-5-5"></path><path d="M22 12l-5 5"></path><circle cx="12" cy="12" r="3"></circle></svg>
-            </div>
-            <h3>Multi-sensor, multi-scale</h3>
-            <p>
-              From Sentinel-2 to next-generation hyperspectral sensors, RAYX harmonises data across time,
-              space and sensor, so you can build robust, long-term applications.
-            </p>
-          </article>
-        </div>
+    <div class="grid3">
+      <div class="card">
+        <h3>EO platforms</h3>
+        <p class="muted">Harmonised reflectance inputs for stable multi-sensor analytics and model training.</p>
       </div>
-    </section>
-
-    <!-- TECHNOLOGY -->
-    <section id="technology" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>The RAYX pipeline</h2>
-          <p>
-            A modular, physics-based chain for taking satellite light all the way to biophysical variables
-            and decision-ready indicators.
-          </p>
-        </div>
-        <div class="tech-grid">
-          <div class="tech-step">
-            <h3>1. Ingest &amp; QA</h3>
-            <p>
-              Multi-mission satellite data (e.g. Sentinel-2) ingested, quality-flagged and co-registered with
-              meteorological and ancillary datasets.
-            </p>
-          </div>
-          <div class="tech-step">
-            <h3>2. Atmospheric correction</h3>
-            <p>
-              Sensor-invariant atmospheric correction with radiative transfer under the hood:
-              aerosol, water vapour and BRDF effects accounted for, not ignored.
-            </p>
-          </div>
-          <div class="tech-step">
-            <h3>3. Harmonisation</h3>
-            <p>
-              Spectral and spatial harmonisation across sensors and over time, producing stable surface
-              reflectance archives for downstream analytics.
-            </p>
-          </div>
-          <div class="tech-step">
-            <h3>4. Biophysical retrievals</h3>
-            <p>
-              Retrieval of crop and vegetation variables (LAI, fAPAR, biomass proxies) and other land
-              indicators relevant to food security and climate applications.
-            </p>
-          </div>
-          <div class="tech-step">
-            <h3>5. Delivery &amp; integration</h3>
-            <p>
-              Products delivered via simple APIs or object storage, ready to plug into your modelling,
-              dashboards or decision workflows.
-            </p>
-          </div>
-        </div>
+      <div class="card">
+        <h3>Commodity trading</h3>
+        <p class="muted">Early yield signals and yield-limiting factors for market intelligence and risk.</p>
       </div>
-    </section>
-
-    <!-- USE CASES -->
-    <section id="use-cases" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Where RAYX is used</h2>
-          <p>
-            Same physics-based core, tailored for different sectors that depend on reliable Earth observation.
-          </p>
-        </div>
-        <div class="cards cards-wide">
-          <article class="card">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
-            </div>
-            <h3>Agriculture &amp; food security</h3>
-            <p>
-              Monitor crop condition, stress and yield risk from field to region. Support early-warning systems,
-              input optimisation and food-security assessments.
-            </p>
-          </article>
-          <article class="card">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path></svg>
-            </div>
-            <h3>Land &amp; ecosystems</h3>
-            <p>
-              Track vegetation dynamics, land degradation and restoration outcomes with consistent, long-term
-              surface reflectance and biophysical indicators.
-            </p>
-          </article>
-          <article class="card">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path></svg>
-            </div>
-            <h3>Climate &amp; risk analytics</h3>
-            <p>
-              Feed climate-risk models, insurance products and ESG reporting with harmonised, physically
-              grounded EO inputs rather than ad-hoc composites.
-            </p>
-          </article>
-        </div>
+      <div class="card">
+        <h3>Crop insurance</h3>
+        <p class="muted">Consistent monitoring and yield estimation to support underwriting and claims.</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container about-grid">
+<section class="section tight">
+  <div class="container callout">
+    <div class="left">
+      <h2>Start with one product. Expand when you’re ready.</h2>
+      <p class="muted">Explore SIAC for reflectance, ARC for crop states, and Yield for forecasting — independently or together.</p>
+    </div>
+    <div class="right">
+      <a class="btn btn-primary" href="/products/siac.html">Explore SIAC</a>
+      <a class="btn" href="/use-cases.html">See use cases</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img class="brand-mark" src="/favicon.png" alt="RayX logo">
         <div>
-          <div class="section-header">
-            <h2>About RAYX</h2>
-          </div>
-          <p>
-            RAYX is built around a simple idea: satellite light is rich, but messy. Turning it into
-            something trustworthy takes atmospheric correction, radiative transfer and careful harmonisation — not just
-            another black-box model.
-          </p>
-          <p>
-            We bring together experience in Earth observation, radiative transfer modelling, hyperspectral analysis
-            and food-security applications to create a stable foundation layer for anyone building on satellite data.
-          </p>
-        </div>
-        <div class="about-highlight">
-          <h3>Focus areas</h3>
-          <ul>
-            <li>Analysis-ready satellite data (ARD) pipelines</li>
-            <li>Sensor-invariant atmospheric correction (SIAC-style)</li>
-            <li>Sentinel-2 and hyperspectral missions</li>
-            <li>Crop and vegetation biophysical retrievals</li>
-            <li>Food-security and climate-risk use cases</li>
-          </ul>
+          <div class="brand-name">RayX</div>
+          <div class="muted">Earth observation products</div>
         </div>
       </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Let’s talk</h2>
-          <p>
-            Whether you're building an EO product, a food-security system or a research pipeline, RAYX can be
-            the layer that makes satellite light reliable.
-          </p>
-        </div>
-        <div class="contact-box">
-          <p>
-            Drop us a message with a few lines about your use case, and we’ll get back to you.
-          </p>
-          <a class="btn primary" href="mailto:hello@rayx.co.uk?subject=RAYX%20Enquiry">
-            Email hello@rayx.co.uk
-          </a>
-          <p class="contact-note">
-            Custom integrations, collaborations and pilot projects welcome.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <span class="logo-text">RAYX</span>
-        <span class="footer-tagline">Light, explained.</span>
-      </div>
-      <div class="footer-right">
-        <span>© <span id="year"></span> RAYX Ltd</span>
-        <span>rayx.co.uk</span>
-      </div>
+      <p class="muted small">
+        RayX builds sensor-invariant reflectance and model-ready analytics products.
+        Our suite includes SIAC (reflectance), ARC (agriculture foundation models), and Yield (yield intelligence).
+      </p>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div>
+      <div class="footer-title">Products</div>
+      <a href="/products/siac.html">SIAC</a>
+      <a href="/products/arc.html">ARC</a>
+      <a href="/products/yield.html">Yield</a>
+    </div>
+
+    <div>
+      <div class="footer-title">Company</div>
+      <a href="/technology.html">Technology</a>
+      <a href="/use-cases.html">Use cases</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <div class="muted small">© <span id="year"></span> RayX. All rights reserved.</div>
+    <div class="muted small">Built for GitHub Pages.</div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
