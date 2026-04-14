@@ -1,4 +1,8 @@
 (function(){
+  /* Mark JS enabled */
+  document.documentElement.classList.add('js');
+
+  /* Header scroll state */
   const header = document.querySelector('.site-header');
   const setHeaderState = () => {
     if(!header) return;
@@ -7,6 +11,7 @@
   setHeaderState();
   window.addEventListener('scroll', setHeaderState, { passive: true });
 
+  /* Mobile nav toggle */
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav-links');
 
@@ -40,6 +45,69 @@
     });
   }
 
+  /* Footer year */
   const y = document.getElementById('year');
   if(y) y.textContent = new Date().getFullYear();
+
+  /* Scroll-triggered reveal for content sections */
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if(!prefersReduced && 'IntersectionObserver' in window) {
+    const revealTargets = document.querySelectorAll(
+      '.proof-card, .workflow-stage, .audience-card, .row-panel, .layer-band, .story-band, .contact-note, .table-shell, .contact-form'
+    );
+
+    const revealStyle = document.createElement('style');
+    revealStyle.textContent = `
+      .reveal-ready {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    `;
+    document.head.appendChild(revealStyle);
+
+    revealTargets.forEach((el, i) => {
+      el.classList.add('reveal-ready');
+      /* Stagger siblings slightly */
+      const siblingIndex = Array.from(el.parentElement.children).indexOf(el);
+      el.style.transitionDelay = (siblingIndex * 0.06) + 's';
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('reveal-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.08,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealTargets.forEach((el) => observer.observe(el));
+  }
+
+  /* Smooth scroll for anchor links */
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const id = link.getAttribute('href');
+      if(id && id.length > 1) {
+        const target = document.querySelector(id);
+        if(target) {
+          e.preventDefault();
+          target.scrollIntoView({
+            behavior: prefersReduced ? 'auto' : 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
+  });
 })();

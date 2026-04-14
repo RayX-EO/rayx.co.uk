@@ -1,33 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXYYG3BB6R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-WXYYG3BB6R');
   </script>
-<title>RayX | Earth observation products: reflectance, models, yield intelligence</title>
-<meta name="description" content="RayX builds earth observation products including SIAC (reflectance), ARC (agriculture foundation models), and Yield (yield intelligence).">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5f7">
-<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
+  <title>RayX | Satellite crop intelligence grounded in physics</title>
+  <meta name="description" content="RayX turns satellite imagery into reliable crop intelligence for monitoring, yield forecasting, and risk management. Built on 10+ years of radiative transfer research from UCL.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D1224">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/">
-      <img class="brand-mark" src="/favicon.png" alt="RayX logo">
-      <span class="brand-name">RayX</span>
+    <a class="brand" href="/" aria-label="RayX home">
+      <img class="brand-logo" src="/assets/img/rayx-logo-white.png" alt="RayX">
     </a>
 
     <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks">
@@ -41,199 +38,226 @@
       <a href="/technology.html">Technology</a>
       <a href="/use-cases.html">Use cases</a>
       <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+      <a class="nav-cta" href="/contact.html">Get in touch</a>
     </nav>
   </div>
 </header>
+
 <main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <div class="kicker">RayX Earth Observation</div>
-      <h1>From satellite light to decision-ready signals.</h1>
-      <p>
-        <strong>SIAC</strong> harmonises surface reflectance across sensors.
-        <strong>ARC</strong> translates EO light into crop states.
-        <strong>Yield</strong> delivers yield estimation and early forecasting.
-      </p>
+  <!-- Hero -->
+  <section class="masthead hero-atlas">
+    <div class="container masthead-grid hero-grid">
+      <div class="masthead-main hero-main">
+        <div class="eyebrow">Satellite crop intelligence</div>
+        <h1>Know what's happening in the field before you have to guess.</h1>
+        <div class="signal-rule"></div>
+        <p class="lede">
+          Agricultural decisions depend on reliable information from the ground up. RayX uses physics-based models and satellite imagery to deliver crop intelligence you can trace from raw signal to final answer &mdash; so you can act with confidence, not assumption.
+        </p>
 
-      <div class="actions">
-        <a class="btn btn-primary" href="#products">Explore products</a>
-        <a class="btn" href="/technology.html">How it works</a>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/contact.html">Start a conversation</a>
+          <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+        </div>
+
+        <p class="hero-trust-line">Born from 10+ years of Earth observation research at UCL.</p>
       </div>
 
-      <div class="badge-row">
-        <span class="badge">CEOS ARD-aligned reflectance</span>
-        <span class="badge">Calibration + validation</span>
-        <span class="badge">Independent product lines</span>
-      </div>
+      <aside class="hero-rail" aria-label="RayX workflow">
+        <div class="hero-rail-title">Three layers, one chain</div>
+        <div class="hero-rail-steps">
+          <article class="rail-stop rail-red">
+            <div class="rail-step">01</div>
+            <div class="rail-copy">
+              <div class="rail-kicker">Clean the signal</div>
+              <h2>SIAC</h2>
+              <p>Atmospheric correction that makes satellite reflectance consistent across sensors, places, and time.</p>
+            </div>
+          </article>
+          <article class="rail-stop rail-blue">
+            <div class="rail-step">02</div>
+            <div class="rail-copy">
+              <div class="rail-kicker">Understand the crop</div>
+              <h2>ARC</h2>
+              <p>A crop model that interprets what the satellite signal means for growth stage, health, and season dynamics.</p>
+            </div>
+          </article>
+          <article class="rail-stop rail-green">
+            <div class="rail-step">03</div>
+            <div class="rail-copy">
+              <div class="rail-kicker">Inform the decision</div>
+              <h2>Yield</h2>
+              <p>Yield forecasting and risk signals that connect directly back to crop-state evidence.</p>
+            </div>
+          </article>
+        </div>
+      </aside>
     </div>
+  </section>
 
-    <div class="hero-card">
-      <div class="pill">Product suite</div>
-      <h3 style="margin-top:10px">Use one product or combine them.</h3>
-
-      <div class="grid2" style="margin-top:12px">
-        <a class="kpi" href="/products/siac.html">
-          <div class="big">SIAC</div>
-          <div class="muted small">Surface reflectance harmonisation across sensors</div>
-        </a>
-        <a class="kpi" href="/products/arc.html">
-          <div class="big">ARC</div>
-          <div class="muted small">Agriculture foundation model: light → crop states</div>
-        </a>
-        <a class="kpi" href="/products/yield.html">
-          <div class="big">Yield</div>
-          <div class="muted small">Yield estimation + 2–3 month forecasting</div>
-        </a>
-        <a class="kpi" href="/technology.html#delivery">
-          <div class="big">Delivery</div>
-          <div class="muted small">Dataset, batch processing, or API integration</div>
-        </a>
-      </div>
+  <!-- Value props -->
+  <section class="proof-strip">
+    <div class="container proof-grid">
+      <article class="proof-card">
+        <div class="proof-kicker">Traceable</div>
+        <p>Every output connects back to the physics. You can see why the model says what it says, not just what it says.</p>
+      </article>
+      <article class="proof-card">
+        <div class="proof-kicker">Multi-sensor</div>
+        <p>Works across Sentinel-2, Landsat, and commercial satellites. One consistent signal, regardless of source.</p>
+      </article>
+      <article class="proof-card">
+        <div class="proof-kicker">Season-aware</div>
+        <p>Tracks how crops develop through the growing season, not just a single snapshot in time.</p>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="products" class="section">
-  <div class="container">
-    <div class="section-title">
-      <div>
-        <div class="kicker">Products</div>
-        <h2>Three products. Clear scopes.</h2>
-      </div>
-      <a class="btn btn-sm" href="/technology.html">How it works</a>
-    </div>
-
-    <div class="grid3">
-      <a class="card" href="/products/siac.html">
-        <div class="pill">RayX — SIAC</div>
-        <h3 style="margin-top:10px">Sensor-invariant surface reflectance.</h3>
-        <p class="muted">Accurate, consistent SR from multispectral → hyperspectral, aligned with CEOS ARD expectations.</p>
-        <ul>
-          <li>Radiometric calibration & validation</li>
-          <li>Cross-sensor comparability for time-series</li>
-          <li>QA + traceability</li>
-        </ul>
-      </a>
-
-      <a class="card" href="/products/arc.html">
-        <div class="pill">RayX — ARC</div>
-        <h3 style="margin-top:10px">Agriculture foundation models.</h3>
-        <p class="muted">Physics + biology-guided translation from EO light signals to crop properties through the season.</p>
-        <ul>
-          <li>Robust biophysical estimation</li>
-          <li>Near real-time growth monitoring</li>
-          <li>Improves on vegetation indices</li>
-        </ul>
-      </a>
-
-      <a class="card" href="/products/yield.html">
-        <div class="pill">RayX — Yield</div>
-        <h3 style="margin-top:10px">Yield intelligence.</h3>
-        <p class="muted">Field-level yield estimation and 2–3 month ahead yield prediction with factor attribution.</p>
-        <ul>
-          <li>8+ years of yield records (where available)</li>
-          <li>Yield-limiting factor identification</li>
-          <li>Signals for trading & insurance</li>
-        </ul>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section tight">
-  <div class="container callout">
-    <div class="left">
-      <div class="kicker">Positioning</div>
-      <h2>A product suite — not a single vertical.</h2>
-      <p class="muted">
-        SIAC is a general EO calibration product for reflectance consistency.
-        ARC and Yield are agriculture products built on top of stable inputs.
-        You can use each component independently.
-      </p>
-    </div>
-    <div class="right">
-      <a class="btn btn-primary" href="/use-cases.html">See use cases</a>
-      <a class="btn" href="/technology.html">Technology</a>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-title">
-      <div>
-        <div class="kicker">Applications</div>
-        <h2>Where teams use RayX products.</h2>
-      </div>
-    </div>
-
-    <div class="grid3">
-      <div class="card">
-        <h3>EO platforms</h3>
-        <p class="muted">Harmonised reflectance inputs for stable multi-sensor analytics and model training.</p>
-      </div>
-      <div class="card">
-        <h3>Commodity trading</h3>
-        <p class="muted">Early yield signals and yield-limiting factors for market intelligence and risk.</p>
-      </div>
-      <div class="card">
-        <h3>Crop insurance</h3>
-        <p class="muted">Consistent monitoring and yield estimation to support underwriting and claims.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section tight">
-  <div class="container callout">
-    <div class="left">
-      <h2>Start with one product. Expand when you’re ready.</h2>
-      <p class="muted">Explore SIAC for reflectance, ARC for crop states, and Yield for forecasting — independently or together.</p>
-    </div>
-    <div class="right">
-      <a class="btn btn-primary" href="/products/siac.html">Explore SIAC</a>
-      <a class="btn" href="/use-cases.html">See use cases</a>
-    </div>
-  </div>
-</section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img class="brand-mark" src="/favicon.png" alt="RayX logo">
+  <!-- How it works -->
+  <section id="how-it-works" class="workflow-section">
+    <div class="container">
+      <div class="workflow-heading">
         <div>
-          <div class="brand-name">RayX</div>
-          <div class="muted">Earth observation products</div>
+          <div class="eyebrow">How it works</div>
+          <h2>Three layers that build on each other.</h2>
+        </div>
+        <p>
+          Most crop intelligence tools skip straight to an answer. RayX keeps the chain visible: clean the satellite signal first, interpret what it means for the crop, then project the outcome. You can use one layer or all three.
+        </p>
+      </div>
+      <div class="workflow-atlas">
+        <article class="workflow-stage stage-siac">
+          <div class="stage-topline">Layer 01</div>
+          <h3>SIAC</h3>
+          <div class="stage-role">Atmospheric correction</div>
+          <p>
+            Satellite images are distorted by the atmosphere. SIAC corrects for this using a physical model of how light travels through air, water vapour, and aerosols &mdash; producing surface reflectance you can compare across sensors and dates.
+          </p>
+          <ul class="stage-list">
+            <li>Corrects Sentinel-2, Landsat, and commercial imagery.</li>
+            <li>Removes atmospheric noise without machine learning guesswork.</li>
+            <li>Creates a stable foundation for everything downstream.</li>
+          </ul>
+          <a class="text-link" href="/products/siac.html">Learn more about SIAC &rarr;</a>
+        </article>
+
+        <article class="workflow-stage stage-arc">
+          <div class="stage-topline">Layer 02</div>
+          <h3>ARC</h3>
+          <div class="stage-role">Crop state intelligence</div>
+          <p>
+            ARC is a physics-grounded crop model that translates multi-spectral reflectance into biophysical crop parameters: leaf area, canopy structure, chlorophyll, and growth stage.
+          </p>
+          <ul class="stage-list">
+            <li>Goes beyond vegetation indices to actual crop properties.</li>
+            <li>Tracks development through the growing season.</li>
+          </ul>
+          <a class="text-link" href="/products/arc.html">Learn more about ARC &rarr;</a>
+        </article>
+
+        <article class="workflow-stage stage-yield">
+          <div class="stage-topline">Layer 03</div>
+          <h3>Yield</h3>
+          <div class="stage-role">Forecasting &amp; risk</div>
+          <p>
+            Yield translates crop-state intelligence into the numbers that drive planning: expected production, deviation from normal, and early warning of shortfall or surplus.
+          </p>
+          <ul class="stage-list">
+            <li>Pre-harvest yield direction grounded in crop evidence.</li>
+            <li>Risk signals you can trace back to what happened in the field.</li>
+          </ul>
+          <a class="text-link" href="/products/yield.html">Learn more about Yield &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it's for -->
+  <section class="audience-section">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow">Who it's for</div>
+        <h2>Different teams, different starting points.</h2>
+        <p>
+          You don't need to use the full stack. Start where your problem is, and extend when you're ready.
+        </p>
+      </div>
+
+      <div class="audience-grid">
+        <article class="audience-card">
+          <div class="audience-tag">EO platforms &amp; model teams</div>
+          <h3>Start with SIAC</h3>
+          <p>Your models and analytics are only as good as your input data. SIAC gives you analysis-ready surface reflectance that's consistent across your sensor constellation.</p>
+          <a class="text-link" href="/products/siac.html">See SIAC &rarr;</a>
+        </article>
+
+        <article class="audience-card">
+          <div class="audience-tag">Agronomy &amp; crop monitoring</div>
+          <h3>Start with ARC</h3>
+          <p>You need to know what's actually happening in the field, not just what the image looks like. ARC gives you crop-state context through the season.</p>
+          <a class="text-link" href="/products/arc.html">See ARC &rarr;</a>
+        </article>
+
+        <article class="audience-card">
+          <div class="audience-tag">Trading &amp; supply intelligence</div>
+          <h3>Start with Yield</h3>
+          <p>You're making decisions about volume and timing before harvest. Yield gives you earlier, more explainable production signals.</p>
+          <a class="text-link" href="/products/yield.html">See Yield &rarr;</a>
+        </article>
+
+        <article class="audience-card">
+          <div class="audience-tag">Insurance &amp; portfolio risk</div>
+          <h3>Use the full chain</h3>
+          <p>When you need both the answer and the evidence behind it, combining all three layers gives you yield signals backed by a visible audit trail.</p>
+          <a class="text-link" href="/technology.html">See how they connect &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="page-masthead">
+    <div class="container">
+      <div class="footer-cta quiet-cta">
+        <div class="eyebrow">Let's talk</div>
+        <h2>Tell us what you're trying to solve.</h2>
+        <p>Share your region, crops, and the decision you're working toward. We'll figure out which layer makes sense to start with &mdash; or whether the full chain is the right fit.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/contact.html">Get in touch</a>
+          <a class="btn btn-secondary" href="/use-cases.html">See use cases</a>
         </div>
       </div>
-      <p class="muted small">
-        RayX builds sensor-invariant reflectance and model-ready analytics products.
-        Our suite includes SIAC (reflectance), ARC (agriculture foundation models), and Yield (yield intelligence).
-      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-copy">
+      <img class="footer-logo" src="/assets/img/rayx-logo-white.png" alt="RayX">
+      <p>RayX turns satellite imagery into crop intelligence you can trust &mdash; from atmospheric correction through crop modelling to yield forecasting. Built on physics, not black boxes.</p>
     </div>
 
-    <div>
-      <div class="footer-title">Products</div>
-      <a href="/products/siac.html">SIAC</a>
-      <a href="/products/arc.html">ARC</a>
-      <a href="/products/yield.html">Yield</a>
-    </div>
-
-    <div>
-      <div class="footer-title">Company</div>
-      <a href="/technology.html">Technology</a>
-      <a href="/use-cases.html">Use cases</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+    <div class="footer-nav">
+      <div>
+        <div class="footer-title">Products</div>
+        <a href="/products/siac.html">SIAC</a>
+        <a href="/products/arc.html">ARC</a>
+        <a href="/products/yield.html">Yield</a>
+      </div>
+      <div>
+        <div class="footer-title">Company</div>
+        <a href="/technology.html">Technology</a>
+        <a href="/use-cases.html">Use cases</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
     </div>
   </div>
 
   <div class="container footer-bottom">
-    <div class="muted small">© <span id="year"></span> RayX. All rights reserved.</div>
-    <div class="muted small">Built for GitHub Pages.</div>
+    <div>&copy; <span id="year"></span> RayX Ltd. All rights reserved.</div>
+    <div>UCL spin-out &middot; London, UK</div>
   </div>
 </footer>
 

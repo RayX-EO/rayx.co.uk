@@ -1,122 +1,135 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>RayX Yield | Yield intelligence</title>
-<meta name="description" content="RayX builds earth observation products: sensor-invariant surface reflectance, agriculture foundation models, and yield intelligence.">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5f7">
-<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
+  <title>Yield | Crop yield forecasting and risk signals | RayX</title>
+  <meta name="description" content="RayX Yield turns crop-state intelligence into yield forecasts and risk signals. Production direction, deviation from normal, and early warning — grounded in the evidence chain from SIAC and ARC.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D1224">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/">
-      <img class="brand-mark" src="/favicon.png" alt="RayX logo">
-      <span class="brand-name">RayX</span>
-    </a>
-
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks">
-      <span></span><span></span><span></span>
-    </button>
-
+    <a class="brand" href="/" aria-label="RayX home"><img class="brand-logo" src="/assets/img/rayx-logo-white.png" alt="RayX"></a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
     <nav id="navlinks" class="nav-links" aria-label="Primary">
       <a href="/products/siac.html">SIAC</a>
       <a href="/products/arc.html">ARC</a>
-      <a href="/products/yield.html">Yield</a>
+      <a href="/products/yield.html" aria-current="page">Yield</a>
       <a href="/technology.html">Technology</a>
       <a href="/use-cases.html">Use cases</a>
       <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+      <a class="nav-cta" href="/contact.html">Get in touch</a>
     </nav>
   </div>
 </header>
+
 <main>
-<section class="section">
-  <div class="container">
-    <div class="kicker">Product</div>
-    <h1>RayX — Yield</h1>
-    <p class="muted">
-      Yield intelligence: field yield estimation over long records (8+ years where available) and 2–3 month ahead yield prediction.
-      Includes signals that help identify key yield-limiting factors for trading, insurance, and operations.
-    </p>
-
-    <div class="grid2" style="margin-top:18px">
-      <div class="card">
-        <h2>Capabilities</h2>
-        <ul>
-          <li>Field yield estimation and mapping</li>
-          <li>2–3 month ahead yield forecasting</li>
-          <li>Attribution: yield-limiting factor signals</li>
-        </ul>
+  <section class="page-masthead">
+    <div class="container masthead-grid">
+      <div class="masthead-main">
+        <div class="eyebrow">Yield / Layer 03</div>
+        <h1>Yield forecasts you can explain.</h1>
+        <div class="signal-rule"></div>
+        <p class="lede">Yield is the outcome layer in the RayX stack. It translates crop-state intelligence into the numbers decision-makers need: expected production, deviation from normal, and early signals of shortfall or surplus &mdash; with a visible chain back to what's happening in the field.</p>
       </div>
-      <div class="card">
-        <h2>Typical teams</h2>
-        <ul>
-          <li>Commodity trading teams</li>
-          <li>Crop insurers</li>
-          <li>Agribusiness and monitoring programs</li>
-        </ul>
-        <div class="muted small" style="margin-top:10px">Framing: income = yield × commodity price × planting area.</div>
+      <aside class="signal-index">
+        <div class="signal-index-title">Best for</div>
+        <ol>
+          <li><div class="signal-no">01</div><div><strong>Commodity trading</strong><p>Need earlier, more grounded yield direction for positioning.</p></div></li>
+          <li><div class="signal-no">02</div><div><strong>Crop insurance</strong><p>Need yield risk assessment tied to observable evidence.</p></div></li>
+          <li><div class="signal-no">03</div><div><strong>Supply chain planning</strong><p>Need production outlook before official estimates arrive.</p></div></li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <section class="chapter-section">
+    <div class="container chapter-shell">
+      <aside class="chapter-meta">
+        <div class="eyebrow">What it does</div>
+        <h2>From crop evidence to production outlook.</h2>
+        <p>Most yield forecasts are either too late (waiting for ground data) or too opaque (ML predictions without explanation). Yield sits in the middle ground.</p>
+      </aside>
+      <div class="chapter-body row-list">
+        <article class="row-panel">
+          <div class="row-label">The problem</div>
+          <div>
+            <h3>Yield predictions without context are hard to act on.</h3>
+            <p>When a model says "wheat yield is down 8%," the natural follow-up is "why?" and "how confident are you?" If the model can't answer those questions with traceable evidence, the prediction becomes just another opinion in a noisy market.</p>
+          </div>
+        </article>
+        <article class="row-panel">
+          <div class="row-label">How Yield works</div>
+          <div>
+            <h3>Crop-state parameters drive the forecast.</h3>
+            <p>Instead of correlating satellite indices with historical yield numbers, Yield uses the biophysical crop parameters from ARC &mdash; leaf area, canopy development, stress indicators &mdash; as inputs to production estimation. The reasoning connects back to real physical quantities.</p>
+          </div>
+        </article>
+        <article class="row-panel">
+          <div class="row-label">What you get</div>
+          <div>
+            <h3>Yield signals with an evidence trail.</h3>
+            <p>Production direction, regional comparison, and risk flags. When the forecast moves, you can trace it back to which crop parameters changed, in which areas, and when &mdash; not just that a number shifted.</p>
+          </div>
+        </article>
       </div>
     </div>
+  </section>
 
-    <div class="callout" style="margin-top:16px">
-      <div class="left">
-        <strong>Deployment:</strong>
-        <div class="muted">Yield can be used independently; SIAC + ARC improve input stability.</div>
-      </div>
-      <div class="right">
-        <a class="btn btn-primary" href="/use-cases.html">See use cases</a>
-        <a class="btn" href="/products/siac.html">Explore SIAC</a>
+  <section class="chapter-section alt">
+    <div class="container chapter-shell">
+      <aside class="chapter-meta">
+        <div class="eyebrow">In the stack</div>
+        <h2>Yield is strongest with the full chain behind it.</h2>
+      </aside>
+      <div class="chapter-body">
+        <article class="layer-band green">
+          <div class="layer-no">Y</div>
+          <div>
+            <div class="band-header"><h3>The answer layer</h3><div class="band-role">Layer 03 of 03</div></div>
+            <p class="band-copy">Yield benefits most when SIAC provides clean reflectance and ARC provides crop-state context. Together, the chain gives you yield signals backed by a physical evidence trail. But Yield can also work with third-party analysis-ready data if you already have an atmospheric correction workflow in place.</p>
+            <div class="band-actions">
+              <a class="btn btn-light" href="/products/arc.html">&larr; Previous: ARC</a>
+              <a class="btn btn-light" href="/technology.html">See the full chain</a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
-</section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img class="brand-mark" src="/favicon.png" alt="RayX logo">
-        <div>
-          <div class="brand-name">RayX</div>
-          <div class="muted">Earth observation products</div>
+  </section>
+
+  <section class="page-masthead">
+    <div class="container">
+      <div class="footer-cta quiet-cta">
+        <div class="eyebrow">Explore Yield for your portfolio</div>
+        <h2>Tell us your crops, regions, and decision timeline.</h2>
+        <p>We can show you how Yield signals compare to traditional forecasting approaches for a region you care about.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/contact.html">Get in touch</a>
+          <a class="btn btn-secondary" href="/use-cases.html">See use cases</a>
         </div>
       </div>
-      <p class="muted small">
-        RayX builds sensor-invariant reflectance and model-ready analytics products.
-        Our suite includes SIAC (reflectance), ARC (agriculture foundation models), and Yield (yield intelligence).
-      </p>
     </div>
+  </section>
+</main>
 
-    <div>
-      <div class="footer-title">Products</div>
-      <a href="/products/siac.html">SIAC</a>
-      <a href="/products/arc.html">ARC</a>
-      <a href="/products/yield.html">Yield</a>
-    </div>
-
-    <div>
-      <div class="footer-title">Company</div>
-      <a href="/technology.html">Technology</a>
-      <a href="/use-cases.html">Use cases</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-copy"><img class="footer-logo" src="/assets/img/rayx-logo-white.png" alt="RayX"><p>RayX turns satellite imagery into crop intelligence you can trust &mdash; from atmospheric correction through crop modelling to yield forecasting. Built on physics, not black boxes.</p></div>
+    <div class="footer-nav">
+      <div><div class="footer-title">Products</div><a href="/products/siac.html">SIAC</a><a href="/products/arc.html">ARC</a><a href="/products/yield.html">Yield</a></div>
+      <div><div class="footer-title">Company</div><a href="/technology.html">Technology</a><a href="/use-cases.html">Use cases</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
     </div>
   </div>
-
-  <div class="container footer-bottom">
-    <div class="muted small">© <span id="year"></span> RayX. All rights reserved.</div>
-    <div class="muted small">Built for GitHub Pages.</div>
-  </div>
+  <div class="container footer-bottom"><div>&copy; <span id="year"></span> RayX Ltd. All rights reserved.</div><div>UCL spin-out &middot; London, UK</div></div>
 </footer>
-
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

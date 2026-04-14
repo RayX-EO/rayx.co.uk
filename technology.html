@@ -1,118 +1,200 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Technology | RayX</title>
-<meta name="description" content="RayX builds earth observation products: sensor-invariant surface reflectance, agriculture foundation models, and yield intelligence.">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5f7">
-<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
+  <title>Technology | How RayX works from signal to decision | RayX</title>
+  <meta name="description" content="RayX uses radiative transfer physics to process satellite imagery through three connected layers: atmospheric correction (SIAC), crop modelling (ARC), and yield forecasting (Yield).">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D1224">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/">
-      <img class="brand-mark" src="/favicon.png" alt="RayX logo">
-      <span class="brand-name">RayX</span>
+    <a class="brand" href="/" aria-label="RayX home">
+      <img class="brand-logo" src="/assets/img/rayx-logo-white.png" alt="RayX">
     </a>
-
     <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks">
       <span></span><span></span><span></span>
     </button>
-
     <nav id="navlinks" class="nav-links" aria-label="Primary">
       <a href="/products/siac.html">SIAC</a>
       <a href="/products/arc.html">ARC</a>
       <a href="/products/yield.html">Yield</a>
-      <a href="/technology.html">Technology</a>
+      <a href="/technology.html" aria-current="page">Technology</a>
       <a href="/use-cases.html">Use cases</a>
       <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+      <a class="nav-cta" href="/contact.html">Get in touch</a>
     </nav>
   </div>
 </header>
+
 <main>
-<section class="section">
-  <div class="container">
-    <div class="kicker">Technology</div>
-    <h1>A shared foundation across products: calibration-grade consistency.</h1>
-    <p class="muted">
-      RayX products share a core philosophy: stable inputs, traceable validation, and model-ready outputs.
-      SIAC is the reflectance layer; ARC and Yield are optional agriculture products built on top.
-    </p>
+  <section class="page-masthead">
+    <div class="container masthead-grid">
+      <div class="masthead-main">
+        <div class="eyebrow">Technology</div>
+        <h1>Physics in, crop intelligence out.</h1>
+        <div class="signal-rule"></div>
+        <p class="lede">
+          RayX is built on radiative transfer theory &mdash; the mathematics of how light interacts with the atmosphere, plant canopies, and soil. This page explains what that means in practice and why it matters for the quality of the outputs.
+        </p>
+      </div>
+      <aside class="signal-index">
+        <div class="signal-index-title">The chain</div>
+        <ol>
+          <li><div class="signal-no">01</div><div><strong>Observe</strong><p>Satellite captures multi-spectral imagery.</p></div></li>
+          <li><div class="signal-no">02</div><div><strong>Correct</strong><p>SIAC removes atmospheric distortion.</p></div></li>
+          <li><div class="signal-no">03</div><div><strong>Interpret</strong><p>ARC extracts biophysical crop parameters.</p></div></li>
+          <li><div class="signal-no">04</div><div><strong>Forecast</strong><p>Yield projects production and risk.</p></div></li>
+        </ol>
+      </aside>
+    </div>
+  </section>
 
-    <div class="grid3" style="margin-top:18px">
-      <div class="card">
-        <div class="pill">SIAC</div>
-        <h3 style="margin-top:10px">Reflectance harmonisation</h3>
-        <p class="muted">Create consistent surface reflectance across sensors and time for trustworthy analytics.</p>
-      </div>
-      <div class="card">
-        <div class="pill">ARC</div>
-        <h3 style="margin-top:10px">Light → crop translation</h3>
-        <p class="muted">A foundation model grounded in canopy physics and plant biology for robust crop states.</p>
-      </div>
-      <div class="card">
-        <div class="pill">Yield</div>
-        <h3 style="margin-top:10px">Outcome prediction</h3>
-        <p class="muted">Yield estimation and early forecasting with factor attribution for decision-makers.</p>
+  <!-- Why physics matters -->
+  <section class="chapter-section">
+    <div class="container chapter-shell">
+      <aside class="chapter-meta">
+        <div class="eyebrow">Foundation</div>
+        <h2>Why physics-based, not data-driven?</h2>
+        <p>Many remote sensing products rely on machine learning trained on historical correlations. RayX takes a different approach.</p>
+      </aside>
+      <div class="chapter-body row-list">
+        <article class="row-panel">
+          <div class="row-label">Transferability</div>
+          <div>
+            <h3>Physics works in places without training data.</h3>
+            <p>A radiative transfer model describes how light behaves. It doesn't need to be retrained for a new region, crop, or sensor. This means RayX can work in areas where labelled datasets are sparse or nonexistent.</p>
+          </div>
+        </article>
+        <article class="row-panel">
+          <div class="row-label">Interpretability</div>
+          <div>
+            <h3>Every output has a physical meaning.</h3>
+            <p>When ARC estimates a leaf area index of 3.2, that number corresponds to a real physical quantity. It's not an abstract feature learned by a neural network &mdash; it's a measurement you can validate and explain.</p>
+          </div>
+        </article>
+        <article class="row-panel">
+          <div class="row-label">Consistency</div>
+          <div>
+            <h3>The model doesn't drift with the data.</h3>
+            <p>Statistical models can degrade when the input distribution shifts &mdash; a new sensor, an unusual season, a different crop mix. Physics-based models handle these changes because they describe the underlying process, not just the pattern.</p>
+          </div>
+        </article>
       </div>
     </div>
+  </section>
 
-    <div id="delivery" class="card" style="margin-top:16px">
-      <h2>Delivery</h2>
-      <ul>
-        <li><strong>Dataset delivery:</strong> processed outputs ready for analysis.</li>
-        <li><strong>Batch processing:</strong> run products at scale on your AOIs.</li>
-        <li><strong>API integration:</strong> request outputs programmatically (where available).</li>
-      </ul>
+  <!-- The three layers -->
+  <section class="chapter-section alt">
+    <div class="container chapter-shell">
+      <aside class="chapter-meta">
+        <div class="eyebrow">Layer roles</div>
+        <h2>Each layer solves a different problem.</h2>
+        <p>The value of the chain is that each layer improves the next. But each one also solves a standalone problem.</p>
+      </aside>
+      <div class="chapter-body">
+        <article class="layer-band red">
+          <div class="layer-no">S</div>
+          <div>
+            <div class="band-header"><h3>SIAC: Atmospheric correction</h3><div class="band-role">From top-of-atmosphere to surface reflectance</div></div>
+            <p class="band-copy">Models the atmosphere's effect on satellite observations and removes it. Uses radiative transfer physics to estimate aerosol optical depth, water vapour, and ozone, then inverts the atmospheric contribution to recover what the surface actually reflects.</p>
+          </div>
+        </article>
+        <article class="layer-band blue">
+          <div class="layer-no">A</div>
+          <div>
+            <div class="band-header"><h3>ARC: Crop state modelling</h3><div class="band-role">From surface reflectance to biophysical parameters</div></div>
+            <p class="band-copy">Models how light interacts with plant canopies &mdash; leaf tissue, canopy geometry, soil background &mdash; and inverts multi-spectral observations to recover the crop properties that best explain the signal. Outputs include leaf area index, canopy cover, chlorophyll, and growth stage.</p>
+          </div>
+        </article>
+        <article class="layer-band green">
+          <div class="layer-no">Y</div>
+          <div>
+            <div class="band-header"><h3>Yield: Production forecasting</h3><div class="band-role">From crop parameters to yield signals</div></div>
+            <p class="band-copy">Translates the biophysical crop trajectory from ARC into production estimates, anomaly detection, and risk signals. When the forecast changes, you can trace the change back to specific crop parameters in specific areas &mdash; the evidence chain stays visible.</p>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img class="brand-mark" src="/favicon.png" alt="RayX logo">
-        <div>
-          <div class="brand-name">RayX</div>
-          <div class="muted">Earth observation products</div>
+  </section>
+
+  <!-- Delivery -->
+  <section class="matrix-section">
+    <div class="container">
+      <div class="eyebrow">Delivery</div>
+      <h2>How the technology reaches you.</h2>
+      <div class="table-shell">
+        <div class="table-wrap">
+          <table class="decision-table">
+            <thead>
+              <tr>
+                <th>What you need</th>
+                <th>Starting layer</th>
+                <th>What you receive</th>
+                <th>Integration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Analysis-ready reflectance</strong></td>
+                <td>SIAC</td>
+                <td>Surface reflectance products for your sensor constellation.</td>
+                <td>API, cloud-optimised GeoTIFF, or integration with your processing pipeline.</td>
+              </tr>
+              <tr>
+                <td><strong>Crop monitoring intelligence</strong></td>
+                <td>ARC</td>
+                <td>Biophysical crop parameter maps through the growing season.</td>
+                <td>API, dashboard, or data feed into your monitoring system.</td>
+              </tr>
+              <tr>
+                <td><strong>Yield forecasting &amp; risk</strong></td>
+                <td>Yield</td>
+                <td>Production estimates, anomaly flags, and risk signals by region.</td>
+                <td>Reports, API, or integration with your decision workflow.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <p class="muted small">
-        RayX builds sensor-invariant reflectance and model-ready analytics products.
-        Our suite includes SIAC (reflectance), ARC (agriculture foundation models), and Yield (yield intelligence).
-      </p>
     </div>
+  </section>
+</main>
 
-    <div>
-      <div class="footer-title">Products</div>
-      <a href="/products/siac.html">SIAC</a>
-      <a href="/products/arc.html">ARC</a>
-      <a href="/products/yield.html">Yield</a>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-copy">
+      <img class="footer-logo" src="/assets/img/rayx-logo-white.png" alt="RayX">
+      <p>RayX turns satellite imagery into crop intelligence you can trust &mdash; from atmospheric correction through crop modelling to yield forecasting. Built on physics, not black boxes.</p>
     </div>
-
-    <div>
-      <div class="footer-title">Company</div>
-      <a href="/technology.html">Technology</a>
-      <a href="/use-cases.html">Use cases</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+    <div class="footer-nav">
+      <div>
+        <div class="footer-title">Products</div>
+        <a href="/products/siac.html">SIAC</a>
+        <a href="/products/arc.html">ARC</a>
+        <a href="/products/yield.html">Yield</a>
+      </div>
+      <div>
+        <div class="footer-title">Company</div>
+        <a href="/technology.html">Technology</a>
+        <a href="/use-cases.html">Use cases</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
     </div>
   </div>
-
   <div class="container footer-bottom">
-    <div class="muted small">© <span id="year"></span> RayX. All rights reserved.</div>
-    <div class="muted small">Built for GitHub Pages.</div>
+    <div>&copy; <span id="year"></span> RayX Ltd. All rights reserved.</div>
+    <div>UCL spin-out &middot; London, UK</div>
   </div>
 </footer>
-
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

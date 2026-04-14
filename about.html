@@ -1,111 +1,209 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>About | RayX</title>
-<meta name="description" content="RayX builds earth observation products: sensor-invariant surface reflectance, agriculture foundation models, and yield intelligence.">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5f7">
-<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
+  <title>About RayX | Physics-grounded satellite crop intelligence</title>
+  <meta name="description" content="RayX is a UCL spin-out building physics-grounded satellite intelligence for crop monitoring, yield forecasting, and agricultural risk. Over 10 years of research in radiative transfer and Earth observation.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D1224">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/">
-      <img class="brand-mark" src="/favicon.png" alt="RayX logo">
-      <span class="brand-name">RayX</span>
+    <a class="brand" href="/" aria-label="RayX home">
+      <img class="brand-logo" src="/assets/img/rayx-logo-white.png" alt="RayX">
     </a>
-
     <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks">
       <span></span><span></span><span></span>
     </button>
-
     <nav id="navlinks" class="nav-links" aria-label="Primary">
       <a href="/products/siac.html">SIAC</a>
       <a href="/products/arc.html">ARC</a>
       <a href="/products/yield.html">Yield</a>
       <a href="/technology.html">Technology</a>
       <a href="/use-cases.html">Use cases</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/about.html" aria-current="page">About</a>
+      <a class="nav-cta" href="/contact.html">Get in touch</a>
     </nav>
   </div>
 </header>
-<main>
-<section class="section">
-  <div class="container">
-    <div class="kicker">About</div>
-    <h1>RayX builds earth observation products — not a single vertical.</h1>
-    <p class="muted">
-      Our focus is consistency and trust in EO-derived signals.
-      SIAC is a reflectance product designed for multi-sensor harmonisation.
-      ARC and Yield are agriculture product lines built on top of reliable inputs to deliver crop states and yield intelligence.
-    </p>
 
-    <div class="grid2" style="margin-top:18px">
-      <div class="card">
-        <h2>Product philosophy</h2>
-        <ul>
-          <li><strong>Consistency first:</strong> comparable across sensors and seasons</li>
-          <li><strong>Validation:</strong> measurable, auditable calibration and QA</li>
-          <li><strong>Interpretability:</strong> connect signals to physical/biological meaning</li>
-        </ul>
+<main>
+  <section class="page-masthead">
+    <div class="container masthead-grid">
+      <div class="masthead-main">
+        <div class="eyebrow">About RayX</div>
+        <h1>We make satellite data useful for agriculture.</h1>
+        <div class="signal-rule"></div>
+        <p class="lede">
+          RayX is a UCL spin-out that turns raw satellite imagery into crop intelligence
+          agricultural teams can act on &mdash; from atmospheric correction to yield forecasting,
+          with every step grounded in physics.
+        </p>
       </div>
-      <div class="card">
-        <h2>Product lines</h2>
-        <ul>
-          <li><strong>SIAC:</strong> sensor-invariant surface reflectance</li>
-          <li><strong>ARC:</strong> agriculture foundation models</li>
-          <li><strong>Yield:</strong> yield intelligence</li>
-        </ul>
+
+      <aside class="signal-index">
+        <div class="signal-index-title">At a glance</div>
+        <ol>
+          <li>
+            <div class="signal-no">01</div>
+            <div>
+              <strong>UCL spin-out</strong>
+              <p>Born from the Department of Geography's Earth observation research group.</p>
+            </div>
+          </li>
+          <li>
+            <div class="signal-no">02</div>
+            <div>
+              <strong>10+ years of research</strong>
+              <p>In radiative transfer modelling, atmospheric correction, and crop remote sensing.</p>
+            </div>
+          </li>
+          <li>
+            <div class="signal-no">03</div>
+            <div>
+              <strong>Physics-first approach</strong>
+              <p>Models you can interpret and explain, not black-box predictions.</p>
+            </div>
+          </li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Origin story -->
+  <section class="chapter-section">
+    <div class="container chapter-shell">
+      <aside class="chapter-meta">
+        <div class="eyebrow">Our story</div>
+        <h2>From research to product.</h2>
+      </aside>
+
+      <div class="chapter-body row-list">
+        <article class="row-panel">
+          <div class="row-label">The problem</div>
+          <div>
+            <h3>Satellite data is abundant. Reliable crop answers are not.</h3>
+            <p>There's no shortage of satellite imagery. The hard part is turning it into crop information that people can trust enough to make decisions on &mdash; across different sensors, regions, and growing seasons.</p>
+          </div>
+        </article>
+        <article class="row-panel">
+          <div class="row-label">Our approach</div>
+          <div>
+            <h3>Build on physics instead of shortcuts.</h3>
+            <p>RayX's technology is rooted in radiative transfer theory: mathematical models of how light interacts with the atmosphere, soil, and plant canopies. This gives us outputs that are explainable and consistent, not just statistically fitted to training data.</p>
+          </div>
+        </article>
+        <article class="row-panel">
+          <div class="row-label">The result</div>
+          <div>
+            <h3>A connected chain from satellite signal to agricultural decision.</h3>
+            <p>SIAC corrects the atmosphere. ARC interprets the crop. Yield projects the outcome. Each layer feeds the next, and the reasoning stays visible throughout.</p>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
-</section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img class="brand-mark" src="/favicon.png" alt="RayX logo">
-        <div>
-          <div class="brand-name">RayX</div>
-          <div class="muted">Earth observation products</div>
+  </section>
+
+  <!-- What we believe -->
+  <section class="chapter-section alt">
+    <div class="container chapter-shell">
+      <aside class="chapter-meta">
+        <div class="eyebrow">What we believe</div>
+        <h2>Principles that shape our work.</h2>
+      </aside>
+
+      <div class="chapter-body">
+        <div class="story-grid">
+          <article class="story-band">
+            <h3>Transparency over complexity</h3>
+            <p>If you can't explain why a model produces a given output, the output isn't trustworthy enough for real decisions. Our physics-based approach keeps the reasoning chain visible.</p>
+          </article>
+          <article class="story-band">
+            <h3>Accuracy over speed-to-market</h3>
+            <p>We'd rather deliver a reliable signal next month than an unreliable one this week. The agricultural sector needs tools it can depend on season after season.</p>
+          </article>
         </div>
       </div>
-      <p class="muted small">
-        RayX builds sensor-invariant reflectance and model-ready analytics products.
-        Our suite includes SIAC (reflectance), ARC (agriculture foundation models), and Yield (yield intelligence).
-      </p>
     </div>
+  </section>
 
-    <div>
-      <div class="footer-title">Products</div>
-      <a href="/products/siac.html">SIAC</a>
-      <a href="/products/arc.html">ARC</a>
-      <a href="/products/yield.html">Yield</a>
+  <!-- Team -->
+  <section class="chapter-section">
+    <div class="container chapter-shell">
+      <aside class="chapter-meta">
+        <div class="eyebrow">Team</div>
+        <h2>Research-led, commercially focused.</h2>
+      </aside>
+
+      <div class="chapter-body row-list">
+        <article class="row-panel">
+          <div class="row-label">Foundation</div>
+          <div>
+            <h3>UCL Department of Geography</h3>
+            <p>RayX was founded by researchers from UCL's Earth observation group, with deep expertise in radiative transfer modelling, atmospheric correction algorithms, and satellite-based crop monitoring. The team has contributed to ESA-funded projects and peer-reviewed research in remote sensing science.</p>
+          </div>
+        </article>
+        <article class="row-panel">
+          <div class="row-label">Advisory</div>
+          <div>
+            <h3>Scientific advisors from NCEO and ESA programmes</h3>
+            <p>RayX is supported by senior scientists with backgrounds spanning the National Centre for Earth Observation, ESA's climate and land programmes, and government engagement in environmental monitoring.</p>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <div class="footer-title">Company</div>
-      <a href="/technology.html">Technology</a>
-      <a href="/use-cases.html">Use cases</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+  <!-- CTA -->
+  <section class="page-masthead">
+    <div class="container">
+      <div class="footer-cta quiet-cta">
+        <div class="eyebrow">Work with us</div>
+        <h2>We're looking for teams who want better crop intelligence.</h2>
+        <p>Whether you're an EO platform that needs cleaner inputs, a monitoring programme that needs crop-state context, or a trading desk that needs earlier yield signals &mdash; we'd like to hear from you.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/contact.html">Get in touch</a>
+          <a class="btn btn-secondary" href="/use-cases.html">See use cases</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-copy">
+      <img class="footer-logo" src="/assets/img/rayx-logo-white.png" alt="RayX">
+      <p>RayX turns satellite imagery into crop intelligence you can trust &mdash; from atmospheric correction through crop modelling to yield forecasting. Built on physics, not black boxes.</p>
+    </div>
+    <div class="footer-nav">
+      <div>
+        <div class="footer-title">Products</div>
+        <a href="/products/siac.html">SIAC</a>
+        <a href="/products/arc.html">ARC</a>
+        <a href="/products/yield.html">Yield</a>
+      </div>
+      <div>
+        <div class="footer-title">Company</div>
+        <a href="/technology.html">Technology</a>
+        <a href="/use-cases.html">Use cases</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
     </div>
   </div>
-
   <div class="container footer-bottom">
-    <div class="muted small">© <span id="year"></span> RayX. All rights reserved.</div>
-    <div class="muted small">Built for GitHub Pages.</div>
+    <div>&copy; <span id="year"></span> RayX Ltd. All rights reserved.</div>
+    <div>UCL spin-out &middot; London, UK</div>
   </div>
 </footer>
-
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
