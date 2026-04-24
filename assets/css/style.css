@@ -502,7 +502,9 @@ h1 em{font-style:normal;font-weight:300;color:var(--text-muted)}
   .site-header{grid-template-columns:1fr auto;height:56px}
   .nav{display:none}
   .hero{grid-template-columns:1fr;padding-top:128px;gap:30px}
-  .hero-visual{min-height:500px}
+  .hero-visual{min-height:480px}
+  /* Axis corner labels compete with the platform cards below desktop width — hide them */
+  .hero-visual .axis{display:none}
   .chain-grid,.use-grid{grid-template-columns:1fr 1fr}
   .chain-head,.use-head{gap:14px;margin-bottom:36px}
   .split-section{grid-template-columns:1fr;padding:42px;min-height:auto}
@@ -521,16 +523,32 @@ h1 em{font-style:normal;font-weight:300;color:var(--text-muted)}
   .site-header{top:14px;padding-left:18px}
   .nav-cta{font-size:0;width:40px;height:40px;padding:0}
   .nav-cta::after{content:"→";font-size:16px;font-family:'JetBrains Mono',ui-monospace,monospace}
-  .hero{padding-top:112px}
-  .hero-visual{min-height:440px;border-radius:20px}
-  .platform-card.pc-a{left:18px;top:18px;min-width:150px}
-  .platform-card.pc-b{right:18px;bottom:18px;min-width:170px}
+  .hero{padding-top:112px;padding-bottom:88px}
+  .hero-visual{min-height:380px;border-radius:20px}
+
+  /* Compact platform cards so they fit comfortably on a phone */
+  .platform-card{padding:12px 14px;border-radius:14px;min-width:132px}
+  .platform-card .pc-head{font-size:9.5px;letter-spacing:.12em;margin-bottom:8px}
+  .platform-card .pc-val{font-size:22px}
+  .platform-card .pc-sub{font-size:11px;margin-top:4px}
+  .platform-card .spark{height:20px;margin-top:10px}
+  .platform-card.pc-a{left:14px;top:14px;min-width:136px}
+  .platform-card.pc-b{right:14px;bottom:14px;min-width:146px}
+
   .chain-grid,.use-grid{grid-template-columns:1fr}
-  .chain-card{min-height:300px}
+  .chain-card{min-height:280px;padding:22px 22px 24px}
+  .chain-card h2{font-size:58px}
   .split-section{padding:30px;border-radius:22px}
-  .contact-card{border-radius:20px}
+  .contact-card{padding:28px;border-radius:20px}
+  .contact-card h2{font-size:clamp(28px,7vw,44px)}
   .signature-section{padding:80px 0 70px}
   .button{width:100%}
   .hero-actions{width:100%}
-  h1{font-size:clamp(52px,11vw,76px)}
+  h1{font-size:clamp(44px,10vw,68px);letter-spacing:-.045em}
+  .hero-lede{font-size:16.5px;margin-top:20px}
+}
+/* Smallest phones — drop one platform card to avoid horizontal overlap */
+@media (max-width:400px){
+  .platform-card.pc-b{display:none}
+  .hero-visual{min-height:340px}
 }
