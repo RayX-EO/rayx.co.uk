@@ -115,7 +115,7 @@ h1,h2,h3,p{margin:0}
 .nav{display:flex;align-items:center;gap:2px;border:1px solid rgba(214,220,229,.55);background:rgba(230,236,241,.4);border-radius:999px;padding:5px}
 .nav a{font-size:13px;color:#4a5260;padding:8px 13px;border-radius:999px;transition:background .2s var(--ease),color .2s var(--ease)}
 .nav a:hover{background:var(--white);color:var(--ink)}
-.nav-cta{justify-self:end;background:var(--deep);color:#fff;border-radius:999px;padding:11px 18px;font-size:13px;font-weight:500;letter-spacing:-.005em;box-shadow:0 10px 28px rgba(10,13,18,.18);transition:transform .2s var(--ease)}
+.nav-cta{justify-self:end;display:inline-flex;align-items:center;justify-content:center;background:var(--deep);color:#fff;border-radius:999px;padding:11px 18px;font-size:13px;font-weight:500;letter-spacing:-.005em;box-shadow:0 10px 28px rgba(10,13,18,.18);transition:transform .2s var(--ease);line-height:1}
 .nav-cta:hover{transform:translateY(-1px)}
 
 main{overflow:hidden}
@@ -523,8 +523,8 @@ h1 em{font-style:normal;font-weight:300;color:var(--text-muted)}
     width:calc(100% - 28px)
   }
   .site-header{top:14px;padding-left:18px}
-  .nav-cta{font-size:0;width:40px;height:40px;padding:0}
-  .nav-cta::after{content:"→";font-size:16px;font-family:'JetBrains Mono',ui-monospace,monospace}
+  .nav-cta{font-size:0;width:40px;height:40px;padding:0;line-height:0}
+  .nav-cta::after{content:"→";font-size:16px;font-family:'JetBrains Mono',ui-monospace,monospace;line-height:1;display:block}
   .hero{padding-top:112px;padding-bottom:88px}
   .hero-visual{min-height:380px;border-radius:20px}
 
