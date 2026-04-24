@@ -1,135 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>ARC | Physics-grounded crop intelligence from satellite data | RayX</title>
-  <meta name="description" content="ARC is RayX's crop model. It uses radiative transfer inversion to extract biophysical crop parameters from satellite imagery — leaf area, canopy structure, growth stage — through the growing season.">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0D1224">
-  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="utf-8" />
+  <title>RayX — ARC</title>
+  <meta http-equiv="refresh" content="0; url=/#chain" />
+  <link rel="canonical" href="https://www.rayx.co.uk/" />
+  <meta name="robots" content="noindex" />
+  <script>location.replace('/#chain');</script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="/" aria-label="RayX home"><img class="brand-logo" src="/assets/img/rayx-logo-white.png" alt="RayX"></a>
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
-    <nav id="navlinks" class="nav-links" aria-label="Primary">
-      <a href="/products/siac.html">SIAC</a>
-      <a href="/products/arc.html" aria-current="page">ARC</a>
-      <a href="/products/yield.html">Yield</a>
-      <a href="/technology.html">Technology</a>
-      <a href="/use-cases.html">Use cases</a>
-      <a href="/about.html">About</a>
-      <a class="nav-cta" href="/contact.html">Get in touch</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="page-masthead">
-    <div class="container masthead-grid">
-      <div class="masthead-main">
-        <div class="eyebrow">ARC / Layer 02</div>
-        <h1>See what's happening in the crop, not just the image.</h1>
-        <div class="signal-rule"></div>
-        <p class="lede">ARC is a physics-grounded crop model that goes beyond vegetation indices. It uses radiative transfer inversion to extract actual biophysical parameters &mdash; leaf area, canopy structure, chlorophyll content &mdash; and tracks how they change through the growing season.</p>
-      </div>
-      <aside class="signal-index">
-        <div class="signal-index-title">Best for</div>
-        <ol>
-          <li><div class="signal-no">01</div><div><strong>Agronomy teams</strong><p>Need crop-state information, not just colour maps.</p></div></li>
-          <li><div class="signal-no">02</div><div><strong>Monitoring programmes</strong><p>Need to track seasonal crop development at scale.</p></div></li>
-          <li><div class="signal-no">03</div><div><strong>Yield modellers</strong><p>Need biophysical inputs instead of raw spectral indices.</p></div></li>
-        </ol>
-      </aside>
-    </div>
-  </section>
-
-  <section class="chapter-section">
-    <div class="container chapter-shell">
-      <aside class="chapter-meta">
-        <div class="eyebrow">What it does</div>
-        <h2>Crop parameters, not pixels.</h2>
-        <p>Most remote sensing products give you a vegetation index. ARC gives you the physical quantities that actually describe crop condition.</p>
-      </aside>
-      <div class="chapter-body row-list">
-        <article class="row-panel">
-          <div class="row-label">The problem</div>
-          <div>
-            <h3>Vegetation indices are noisy shortcuts.</h3>
-            <p>NDVI and similar indices collapse multi-spectral information into a single number. They saturate at moderate canopy cover, they're sensitive to soil background, and they don't tell you which part of the crop is changing or why.</p>
-          </div>
-        </article>
-        <article class="row-panel">
-          <div class="row-label">How ARC works</div>
-          <div>
-            <h3>Radiative transfer inversion on multi-spectral data.</h3>
-            <p>ARC models how light interacts with leaf tissue, canopy structure, and soil &mdash; then inverts that model against satellite observations to recover the biophysical properties that best explain the signal. This works across multiple spectral bands simultaneously, extracting more information than any single index can.</p>
-          </div>
-        </article>
-        <article class="row-panel">
-          <div class="row-label">What you get</div>
-          <div>
-            <h3>Interpretable crop intelligence through the season.</h3>
-            <p>Leaf area index, canopy cover, chlorophyll content, and other crop parameters mapped over time. You can see not just that something changed, but what changed and how it relates to crop development.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="chapter-section alt">
-    <div class="container chapter-shell">
-      <aside class="chapter-meta">
-        <div class="eyebrow">In the stack</div>
-        <h2>ARC is the interpretation layer.</h2>
-      </aside>
-      <div class="chapter-body">
-        <article class="layer-band blue">
-          <div class="layer-no">A</div>
-          <div>
-            <div class="band-header"><h3>Between clean signal and outcome</h3><div class="band-role">Layer 02 of 03</div></div>
-            <p class="band-copy">ARC works best on SIAC-corrected reflectance, but can also process other analysis-ready data. Downstream, it feeds the Yield layer with crop-state evidence that makes yield forecasts more interpretable. ARC also works standalone for teams whose primary need is crop monitoring.</p>
-            <div class="band-actions">
-              <a class="btn btn-light" href="/products/siac.html">&larr; Previous: SIAC</a>
-              <a class="btn btn-light" href="/products/yield.html">Next: Yield &rarr;</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-masthead">
-    <div class="container">
-      <div class="footer-cta quiet-cta">
-        <div class="eyebrow">Try ARC on your region</div>
-        <h2>Tell us your crops and geography and we'll show you what ARC reveals.</h2>
-        <p>We can run a demonstration over your area of interest to show the difference between index-based monitoring and physics-grounded crop parameters.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="/contact.html">Get in touch</a>
-          <a class="btn btn-secondary" href="/use-cases.html">See use cases</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-copy"><img class="footer-logo" src="/assets/img/rayx-logo-white.png" alt="RayX"><p>RayX turns satellite imagery into crop intelligence you can trust &mdash; from atmospheric correction through crop modelling to yield forecasting. Built on physics, not black boxes.</p></div>
-    <div class="footer-nav">
-      <div><div class="footer-title">Products</div><a href="/products/siac.html">SIAC</a><a href="/products/arc.html">ARC</a><a href="/products/yield.html">Yield</a></div>
-      <div><div class="footer-title">Company</div><a href="/technology.html">Technology</a><a href="/use-cases.html">Use cases</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
-    </div>
-  </div>
-  <div class="container footer-bottom"><div>&copy; <span id="year"></span> RayX Ltd. All rights reserved.</div><div>London, UK</div></div>
-</footer>
-<script src="/assets/js/main.js"></script>
+  <p>Redirecting to <a href="/#chain">rayx.co.uk</a>…</p>
 </body>
 </html>

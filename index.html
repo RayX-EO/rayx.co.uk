@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXYYG3BB6R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -8,259 +9,318 @@
     gtag('js', new Date());
     gtag('config', 'G-WXYYG3BB6R');
   </script>
-  <title>RayX | Satellite crop intelligence grounded in physics</title>
-  <meta name="description" content="RayX turns satellite imagery into reliable crop intelligence for monitoring, yield forecasting, and risk management. Built on 10+ years of radiative transfer research.">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0D1224">
-  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050B16" />
+  <title>RayX — Clarity in every signal. Confidence in every decision.</title>
+  <meta name="description" content="RayX turns satellite observations into physics-led crop intelligence — from signal correction to crop state to yield risk — with the evidence chain preserved end-to-end." />
+
+  <meta property="og:title" content="RayX — Clarity from signal to decision." />
+  <meta property="og:description" content="Physics-led satellite crop intelligence. Analysis-ready reflectance, interpretable crop state, and traceable yield risk — one visible chain." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.rayx.co.uk/" />
+
+  <!-- Favicon system (RayX quiet optical set) -->
+  <link rel="icon"             href="/favicon.ico" sizes="any" />
+  <link rel="icon"             href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180"    href="/apple-touch-icon.png" />
+  <link rel="mask-icon"        href="/favicon.svg" color="#050B16" />
+  <link rel="manifest"         href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://rsms.me" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="/" aria-label="RayX home">
-      <img class="brand-logo" src="/assets/img/rayx-logo-white.png" alt="RayX">
+  <header class="site-header" aria-label="Primary">
+    <a class="brand" href="#top" aria-label="RayX home">
+      <span class="brand-ray">ray</span><span class="brand-x" aria-hidden="true"></span>
     </a>
-
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav id="navlinks" class="nav-links" aria-label="Primary">
-      <a href="/products/siac.html">SIAC</a>
-      <a href="/products/arc.html">ARC</a>
-      <a href="/products/yield.html">Yield</a>
-      <a href="/technology.html">Technology</a>
-      <a href="/use-cases.html">Use cases</a>
-      <a href="/about.html">About</a>
-      <a class="nav-cta" href="/contact.html">Get in touch</a>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="#chain">Platform</a>
+      <a href="#technology">Technology</a>
+      <a href="#use-cases">Use cases</a>
     </nav>
-  </div>
-</header>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </header>
 
-<main>
-  <!-- Hero -->
-  <section class="masthead hero-atlas">
-    <div class="container masthead-grid hero-grid">
-      <div class="masthead-main hero-main">
-        <div class="eyebrow">Satellite crop intelligence</div>
-        <h1>Know what's happening in the field before you have to guess.</h1>
-        <div class="signal-rule"></div>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero section-bleed">
+      <div class="hero-copy">
+        <span class="hero-tag"><span class="dot"></span> Physics-led crop intelligence · V1</span>
+        <h1>Clarity from<br />signal <em>to</em> decision.</h1>
+        <p class="hero-lede">
+          RayX rebuilds the evidence chain from the pixel up — analysis-ready reflectance, interpretable crop state, and traceable yield risk.
+        </p>
+        <div class="hero-actions">
+          <a class="button dark" href="#contact">Start a conversation <span class="arr">→</span></a>
+          <a class="button light" href="#chain">See the chain</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <span class="axis tl">LAT 52.0384 N</span>
+        <span class="axis tr">LON 0.7018 E</span>
+        <span class="axis bl">SENSOR · S2A</span>
+        <span class="axis br">RayX · LAB / V1</span>
+
+        <div class="xray">
+          <span class="halo"></span>
+          <span class="flare"></span>
+        </div>
+
+        <div class="platform-card pc-a">
+          <div class="pc-head"><span>Coherence</span><span class="pc-dot"></span></div>
+          <div class="pc-val">98.7%</div>
+          <div class="pc-sub">cross-sensor reflectance</div>
+          <div class="spark">
+            <svg viewBox="0 0 160 28" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="sparkA" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0" stop-color="#6A86B6" stop-opacity="0"/>
+                  <stop offset=".5" stop-color="#6A86B6"/>
+                  <stop offset="1" stop-color="#6A86B6" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0 20 L18 18 L34 19 L50 12 L68 14 L86 8 L104 10 L122 6 L142 7 L160 4" fill="none" stroke="url(#sparkA)" stroke-width="1.4"/>
+              <circle cx="142" cy="7" r="2.2" fill="#0A0D12"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="platform-card pc-c">
+          <div class="pc-head"><span>Chl-a</span><span class="pc-dot" style="background:#8F82D4;box-shadow:0 0 8px #8F82D4"></span></div>
+          <div class="pc-val">42.1</div>
+          <div class="pc-sub">µg · cm⁻² · derived</div>
+        </div>
+
+        <div class="platform-card pc-b">
+          <div class="pc-head"><span>Yield Index</span><span class="pc-dot"></span></div>
+          <div class="pc-val">1.04 <span style="font-size:14px;color:#8A92A1">σ</span></div>
+          <div class="pc-sub">regional anomaly · evidence-linked</div>
+          <div class="spark">
+            <svg viewBox="0 0 180 28" preserveAspectRatio="none">
+              <path d="M0 18 L20 17 L40 14 L60 16 L80 11 L100 9 L120 10 L140 6 L160 8 L180 5"
+                    fill="none" stroke="#0A0D12" stroke-width="1.2" opacity=".85"/>
+              <path d="M0 18 L20 17 L40 14 L60 16 L80 11 L100 9 L120 10 L140 6 L160 8 L180 5 L180 28 L0 28Z"
+                    fill="#0A0D12" opacity=".05"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONE VISIBLE CHAIN -->
+    <section id="chain" class="chain-section">
+      <div class="section-label">
+        <span class="idx">01 /</span>
+        <span class="title">ONE VISIBLE CHAIN</span>
+      </div>
+      <div class="chain-head">
+        <h2>Three layers. One explainable path from signal to decision.</h2>
+        <p>Each layer is useful on its own — and stronger together. Every output links back to the pixel.</p>
+      </div>
+      <div class="chain-grid">
+
+        <article class="chain-card">
+          <div class="cc-top">
+            <span class="cc-step">STEP 01 / CLEAN</span>
+            <span class="cc-tag">SIAC</span>
+          </div>
+          <h2>SIAC</h2>
+          <p class="cc-lede">Consistent surface reflectance across sensors, places, and time — calibrated with radiative transfer.</p>
+          <div class="cc-viz">
+            <span class="cc-metric">Δρ · 0.003</span>
+            <svg viewBox="0 0 320 60" preserveAspectRatio="none">
+              <g stroke="#D6DCE5" stroke-width="1" stroke-dasharray="2 3">
+                <line x1="0" y1="20" x2="320" y2="20"/>
+                <line x1="0" y1="40" x2="320" y2="40"/>
+              </g>
+              <path d="M0 34 L30 28 L60 32 L95 22 L130 30 L165 24 L200 28 L235 20 L270 24 L320 18"
+                    fill="none" stroke="#0A0D12" stroke-width="1.4"/>
+              <g fill="#6A86B6">
+                <circle cx="30" cy="28" r="1.8"/><circle cx="95" cy="22" r="1.8"/>
+                <circle cx="165" cy="24" r="1.8"/><circle class="marker" cx="235" cy="20" r="2.2" fill="#0A0D12"/>
+              </g>
+            </svg>
+          </div>
+        </article>
+
+        <article class="chain-card active">
+          <div class="cc-top">
+            <span class="cc-step" style="color:#AEB7C5">STEP 02 / INTERPRET</span>
+            <span class="cc-tag">ARC</span>
+          </div>
+          <h2>ARC</h2>
+          <p class="cc-lede">Crop state through the season — structure, chlorophyll, water status, phenology — grounded in physics.</p>
+          <div class="cc-viz">
+            <span class="cc-metric" style="color:#CDD3DE">LAI · 3.8</span>
+            <svg viewBox="0 0 320 60" preserveAspectRatio="none">
+              <g stroke="rgba(255,255,255,.14)" stroke-width="1" stroke-dasharray="2 3">
+                <line x1="0" y1="20" x2="320" y2="20"/>
+                <line x1="0" y1="40" x2="320" y2="40"/>
+              </g>
+              <path d="M0 48 L40 44 L80 36 L120 24 L160 14 L200 10 L240 14 L280 22 L320 30"
+                    fill="none" stroke="#fff" stroke-width="1.4"/>
+              <path d="M0 48 L40 44 L80 36 L120 24 L160 14 L200 10 L240 14 L280 22 L320 30 L320 60 L0 60Z"
+                    fill="#8F82D4" opacity=".22"/>
+              <circle cx="200" cy="10" r="2.4" fill="#fff"/>
+            </svg>
+          </div>
+        </article>
+
+        <article class="chain-card">
+          <div class="cc-top">
+            <span class="cc-step">STEP 03 / FORECAST</span>
+            <span class="cc-tag">YIELD</span>
+          </div>
+          <h2>Yield</h2>
+          <p class="cc-lede">Production signals and risk — earlier than the field, with the evidence preserved.</p>
+          <div class="cc-viz">
+            <span class="cc-metric">Coverage · 93%</span>
+            <svg viewBox="0 0 320 60" preserveAspectRatio="none">
+              <g stroke="#D6DCE5" stroke-width="1" stroke-dasharray="2 3">
+                <line x1="0" y1="20" x2="320" y2="20"/>
+                <line x1="0" y1="40" x2="320" y2="40"/>
+              </g>
+              <g fill="#0A0D12">
+                <rect x="12" y="36" width="16" height="18" rx="1.5" opacity=".75"/>
+                <rect x="44" y="30" width="16" height="24" rx="1.5" opacity=".8"/>
+                <rect x="76" y="22" width="16" height="32" rx="1.5" opacity=".85"/>
+                <rect x="108" y="26" width="16" height="28" rx="1.5" opacity=".75"/>
+                <rect x="140" y="18" width="16" height="36" rx="1.5"/>
+                <rect x="172" y="14" width="16" height="40" rx="1.5"/>
+                <rect x="204" y="16" width="16" height="38" rx="1.5" opacity=".9"/>
+                <rect x="236" y="10" width="16" height="44" rx="1.5"/>
+                <rect x="268" y="14" width="16" height="40" rx="1.5" opacity=".85"/>
+                <rect x="300" y="8" width="16" height="46" rx="1.5"/>
+              </g>
+            </svg>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY / DARK PANEL -->
+    <section id="technology" class="split-section dark-panel">
+      <div>
+        <span class="eyebrow inverse">Technology</span>
+        <h2>Built on physics. Designed for trust.</h2>
         <p class="lede">
-          Agricultural decisions depend on reliable information from the ground up. RayX uses physics-based models and satellite imagery to deliver crop intelligence you can trace from raw signal to final answer &mdash; so you can act with confidence, not assumption.
+          Every RayX output — reflectance, biophysical variable, yield signal — carries its evidence with it. That's how decisions hold up under scrutiny.
         </p>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="/contact.html">Start a conversation</a>
-          <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
-        </div>
-
-        <p class="hero-trust-line">Born from 10+ years of Earth observation research.</p>
       </div>
-
-      <aside class="hero-rail" aria-label="RayX workflow">
-        <div class="hero-rail-title">Three layers, one chain</div>
-        <div class="hero-rail-steps">
-          <article class="rail-stop rail-red">
-            <div class="rail-step">01</div>
-            <div class="rail-copy">
-              <div class="rail-kicker">Clean the signal</div>
-              <h2>SIAC</h2>
-              <p>Atmospheric correction that makes satellite reflectance consistent across sensors, places, and time.</p>
-            </div>
-          </article>
-          <article class="rail-stop rail-blue">
-            <div class="rail-step">02</div>
-            <div class="rail-copy">
-              <div class="rail-kicker">Understand the crop</div>
-              <h2>ARC</h2>
-              <p>A crop model that interprets what the satellite signal means for growth stage, health, and season dynamics.</p>
-            </div>
-          </article>
-          <article class="rail-stop rail-green">
-            <div class="rail-step">03</div>
-            <div class="rail-copy">
-              <div class="rail-kicker">Inform the decision</div>
-              <h2>Yield</h2>
-              <p>Yield forecasting and risk signals that connect directly back to crop-state evidence.</p>
-            </div>
-          </article>
+      <div class="proof-grid">
+        <div class="proof-item">
+          <span class="label">Traceable</span>
+          <p>Every output links back to the signal it came from.</p>
+          <span class="ref">01</span>
         </div>
-      </aside>
-    </div>
-  </section>
+        <div class="proof-item">
+          <span class="label">Multi-sensor</span>
+          <p>One chain across Sentinel-2, Landsat, and commercial imagery.</p>
+          <span class="ref">02</span>
+        </div>
+        <div class="proof-item">
+          <span class="label">Season-aware</span>
+          <p>Context through the crop cycle — not isolated snapshots.</p>
+          <span class="ref">03</span>
+        </div>
+        <div class="proof-item">
+          <span class="label">Explainable</span>
+          <p>Physics-grounded, auditable, and built for partners who need to show their work.</p>
+          <span class="ref">04</span>
+        </div>
+      </div>
+      <div class="dark-ray" aria-hidden="true"><div class="xray"><span class="flare" style="box-shadow:0 0 18px #fff,0 0 60px rgba(143,130,212,.55),0 0 120px rgba(106,134,182,.4)"></span></div></div>
+    </section>
 
-  <!-- Value props -->
-  <section class="proof-strip">
-    <div class="container proof-grid">
-      <article class="proof-card">
-        <div class="proof-kicker">Traceable</div>
-        <p>Every output connects back to the physics. You can see why the model says what it says, not just what it says.</p>
-      </article>
-      <article class="proof-card">
-        <div class="proof-kicker">Multi-sensor</div>
-        <p>Works across Sentinel-2, Landsat, and commercial satellites. One consistent signal, regardless of source.</p>
-      </article>
-      <article class="proof-card">
-        <div class="proof-kicker">Season-aware</div>
-        <p>Tracks how crops develop through the growing season, not just a single snapshot in time.</p>
-      </article>
-    </div>
-  </section>
+    <!-- USE CASES -->
+    <section id="use-cases" class="use-section">
+      <div class="section-label">
+        <span class="idx">02 /</span>
+        <span class="title">WHERE RAYX STARTS</span>
+      </div>
+      <div class="use-head">
+        <h2>Four places where an explainable chain changes the work.</h2>
+        <p>Start anywhere in the chain — SIAC, ARC, or Yield. Add the rest when you're ready.</p>
+      </div>
+      <div class="use-grid">
+        <article>
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+              <rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M3 14l5-4 4 3 3-5 6 5"/>
+            </svg>
+          </div>
+          <h3>EO platforms</h3>
+          <p>Analysis-ready reflectance — consistent across sensors, places, and time.</p>
+        </article>
+        <article>
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+              <path d="M12 3v18"/><path d="M6 8c3 0 6-2 6-5"/><path d="M18 12c-3 0-6-2-6-5"/><path d="M6 16c3 0 6-2 6-5"/>
+            </svg>
+          </div>
+          <h3>Agronomy</h3>
+          <p>Crop state through the season — structure, vigour, water, phenology.</p>
+        </article>
+        <article>
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+              <path d="M3 19l5-6 4 4 3-5 6 7"/><circle cx="19" cy="6" r="2"/>
+            </svg>
+          </div>
+          <h3>Supply intelligence</h3>
+          <p>Earlier yield direction — with the chain of evidence behind every call.</p>
+        </article>
+        <article>
+          <div class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+              <path d="M12 3l8 4v6c0 5-4 7-8 8-4-1-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Insurance</h3>
+          <p>Risk signals with an audit trail — defensible under review.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- How it works -->
-  <section id="how-it-works" class="workflow-section">
-    <div class="container">
-      <div class="workflow-heading">
+    <!-- SIGNATURE VOICE -->
+    <section class="signature-section">
+      <h2>Less black box. <span>More signal.</span></h2>
+      <div class="signature-ray" aria-hidden="true"><span class="node"></span></div>
+      <p class="voice">Clarity in every signal &nbsp;·&nbsp; Confidence in every decision</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="contact-card">
         <div>
-          <div class="eyebrow">How it works</div>
-          <h2>Three layers that build on each other.</h2>
+          <span class="eyebrow">Start small</span>
+          <h2>Tell us the crop, region, and decision.</h2>
+          <p>We'll help identify whether to start with SIAC, ARC, Yield — or the full chain. A pilot takes one region and one season.</p>
         </div>
-        <p>
-          Most crop intelligence tools skip straight to an answer. RayX keeps the chain visible: clean the satellite signal first, interpret what it means for the crop, then project the outcome. You can use one layer or all three.
-        </p>
-      </div>
-      <div class="workflow-atlas">
-        <article class="workflow-stage stage-siac">
-          <div class="stage-topline">Layer 01</div>
-          <h3>SIAC</h3>
-          <div class="stage-role">Atmospheric correction</div>
-          <p>
-            Satellite images are distorted by the atmosphere. SIAC corrects for this using a physical model of how light travels through air, water vapour, and aerosols &mdash; producing surface reflectance you can compare across sensors and dates.
-          </p>
-          <ul class="stage-list">
-            <li>Corrects Sentinel-2, Landsat, and commercial imagery.</li>
-            <li>Removes atmospheric noise without machine learning guesswork.</li>
-            <li>Creates a stable foundation for everything downstream.</li>
-          </ul>
-          <a class="text-link" href="/products/siac.html">Learn more about SIAC &rarr;</a>
-        </article>
-
-        <article class="workflow-stage stage-arc">
-          <div class="stage-topline">Layer 02</div>
-          <h3>ARC</h3>
-          <div class="stage-role">Crop state intelligence</div>
-          <p>
-            ARC is a physics-grounded crop model that translates multi-spectral reflectance into biophysical crop parameters: leaf area, canopy structure, chlorophyll, and growth stage.
-          </p>
-          <ul class="stage-list">
-            <li>Goes beyond vegetation indices to actual crop properties.</li>
-            <li>Tracks development through the growing season.</li>
-          </ul>
-          <a class="text-link" href="/products/arc.html">Learn more about ARC &rarr;</a>
-        </article>
-
-        <article class="workflow-stage stage-yield">
-          <div class="stage-topline">Layer 03</div>
-          <h3>Yield</h3>
-          <div class="stage-role">Forecasting &amp; risk</div>
-          <p>
-            Yield translates crop-state intelligence into the numbers that drive planning: expected production, deviation from normal, and early warning of shortfall or surplus.
-          </p>
-          <ul class="stage-list">
-            <li>Pre-harvest yield direction grounded in crop evidence.</li>
-            <li>Risk signals you can trace back to what happened in the field.</li>
-          </ul>
-          <a class="text-link" href="/products/yield.html">Learn more about Yield &rarr;</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Who it's for -->
-  <section class="audience-section">
-    <div class="container">
-      <div class="section-intro">
-        <div class="eyebrow">Who it's for</div>
-        <h2>Different teams, different starting points.</h2>
-        <p>
-          You don't need to use the full stack. Start where your problem is, and extend when you're ready.
-        </p>
-      </div>
-
-      <div class="audience-grid">
-        <article class="audience-card">
-          <div class="audience-tag">EO platforms &amp; model teams</div>
-          <h3>Start with SIAC</h3>
-          <p>Your models and analytics are only as good as your input data. SIAC gives you analysis-ready surface reflectance that's consistent across your sensor constellation.</p>
-          <a class="text-link" href="/products/siac.html">See SIAC &rarr;</a>
-        </article>
-
-        <article class="audience-card">
-          <div class="audience-tag">Agronomy &amp; crop monitoring</div>
-          <h3>Start with ARC</h3>
-          <p>You need to know what's actually happening in the field, not just what the image looks like. ARC gives you crop-state context through the season.</p>
-          <a class="text-link" href="/products/arc.html">See ARC &rarr;</a>
-        </article>
-
-        <article class="audience-card">
-          <div class="audience-tag">Trading &amp; supply intelligence</div>
-          <h3>Start with Yield</h3>
-          <p>You're making decisions about volume and timing before harvest. Yield gives you earlier, more explainable production signals.</p>
-          <a class="text-link" href="/products/yield.html">See Yield &rarr;</a>
-        </article>
-
-        <article class="audience-card">
-          <div class="audience-tag">Insurance &amp; portfolio risk</div>
-          <h3>Use the full chain</h3>
-          <p>When you need both the answer and the evidence behind it, combining all three layers gives you yield signals backed by a visible audit trail.</p>
-          <a class="text-link" href="/technology.html">See how they connect &rarr;</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="page-masthead">
-    <div class="container">
-      <div class="footer-cta quiet-cta">
-        <div class="eyebrow">Let's talk</div>
-        <h2>Tell us what you're trying to solve.</h2>
-        <p>Share your region, crops, and the decision you're working toward. We'll figure out which layer makes sense to start with &mdash; or whether the full chain is the right fit.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="/contact.html">Get in touch</a>
-          <a class="btn btn-secondary" href="/use-cases.html">See use cases</a>
+        <div class="actions">
+          <a class="button dark" href="mailto:contact@rayx.co.uk?subject=RayX%20conversation">contact@rayx.co.uk <span class="arr">→</span></a>
+          <span class="meta">LONDON · UK · RAYX LTD</span>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-copy">
-      <img class="footer-logo" src="/assets/img/rayx-logo-white.png" alt="RayX">
-      <p>RayX turns satellite imagery into crop intelligence you can trust &mdash; from atmospheric correction through crop modelling to yield forecasting. Built on physics, not black boxes.</p>
-    </div>
-
-    <div class="footer-nav">
-      <div>
-        <div class="footer-title">Products</div>
-        <a href="/products/siac.html">SIAC</a>
-        <a href="/products/arc.html">ARC</a>
-        <a href="/products/yield.html">Yield</a>
-      </div>
-      <div>
-        <div class="footer-title">Company</div>
-        <a href="/technology.html">Technology</a>
-        <a href="/use-cases.html">Use cases</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <div>&copy; <span id="year"></span> RayX Ltd. All rights reserved.</div>
-    <div>London, UK</div>
-  </div>
-</footer>
-
-<script src="/assets/js/main.js"></script>
+  <footer class="footer">
+    <a class="brand small-brand" href="#top" aria-label="RayX home">
+      <span class="brand-ray">ray</span><span class="brand-x" aria-hidden="true"></span>
+    </a>
+    <p class="credit">Physics-led insights · signal to decision</p>
+    <p class="fine">© 2026 RAYX LTD</p>
+  </footer>
 </body>
 </html>

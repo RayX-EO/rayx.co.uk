@@ -1,5 +1,4 @@
 (function(){
-  /* Mark JS enabled */
   document.documentElement.classList.add('js');
 
   /* Header scroll state */
@@ -49,49 +48,32 @@
   const y = document.getElementById('year');
   if(y) y.textContent = new Date().getFullYear();
 
-  /* Scroll-triggered reveal for content sections */
+  /* Scroll-triggered reveal — elements opt in via class="reveal" */
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if(!prefersReduced && 'IntersectionObserver' in window) {
-    const revealTargets = document.querySelectorAll(
-      '.proof-card, .workflow-stage, .audience-card, .row-panel, .layer-band, .story-band, .contact-note, .table-shell, .contact-form'
-    );
+    const targets = document.querySelectorAll('.reveal');
 
-    const revealStyle = document.createElement('style');
-    revealStyle.textContent = `
-      .reveal-ready {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .reveal-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    `;
-    document.head.appendChild(revealStyle);
-
-    revealTargets.forEach((el, i) => {
-      el.classList.add('reveal-ready');
-      /* Stagger siblings slightly */
+    targets.forEach((el) => {
       const siblingIndex = Array.from(el.parentElement.children).indexOf(el);
-      el.style.transitionDelay = (siblingIndex * 0.06) + 's';
+      el.style.transitionDelay = Math.min(siblingIndex, 6) * 0.08 + 's';
     });
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if(entry.isIntersecting) {
-          entry.target.classList.add('reveal-visible');
+          entry.target.classList.add('is-visible');
           observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.08,
+      threshold: 0.1,
       rootMargin: '0px 0px -40px 0px'
     });
 
-    revealTargets.forEach((el) => observer.observe(el));
+    targets.forEach((el) => observer.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
   }
 
   /* Smooth scroll for anchor links */

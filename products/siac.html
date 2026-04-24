@@ -1,135 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>SIAC | Atmospheric correction for multi-sensor satellite imagery | RayX</title>
-  <meta name="description" content="SIAC is RayX's atmospheric correction engine. It removes atmospheric distortion from satellite imagery using physics-based radiative transfer, producing consistent surface reflectance across Sentinel-2, Landsat, and commercial sensors.">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0D1224">
-  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="utf-8" />
+  <title>RayX — SIAC</title>
+  <meta http-equiv="refresh" content="0; url=/#chain" />
+  <link rel="canonical" href="https://www.rayx.co.uk/" />
+  <meta name="robots" content="noindex" />
+  <script>location.replace('/#chain');</script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="/" aria-label="RayX home"><img class="brand-logo" src="/assets/img/rayx-logo-white.png" alt="RayX"></a>
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
-    <nav id="navlinks" class="nav-links" aria-label="Primary">
-      <a href="/products/siac.html" aria-current="page">SIAC</a>
-      <a href="/products/arc.html">ARC</a>
-      <a href="/products/yield.html">Yield</a>
-      <a href="/technology.html">Technology</a>
-      <a href="/use-cases.html">Use cases</a>
-      <a href="/about.html">About</a>
-      <a class="nav-cta" href="/contact.html">Get in touch</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="page-masthead">
-    <div class="container masthead-grid">
-      <div class="masthead-main">
-        <div class="eyebrow">SIAC / Layer 01</div>
-        <h1>Clean satellite signal, consistent results.</h1>
-        <div class="signal-rule"></div>
-        <p class="lede">SIAC is an atmospheric correction algorithm that removes the distortion caused by aerosols, water vapour, and ozone from satellite imagery &mdash; giving you surface reflectance you can compare across sensors, locations, and time.</p>
-      </div>
-      <aside class="signal-index">
-        <div class="signal-index-title">Best for</div>
-        <ol>
-          <li><div class="signal-no">01</div><div><strong>EO platforms</strong><p>Need analysis-ready data across a sensor constellation.</p></div></li>
-          <li><div class="signal-no">02</div><div><strong>Model teams</strong><p>Need consistent inputs before training or running downstream models.</p></div></li>
-          <li><div class="signal-no">03</div><div><strong>Monitoring programmes</strong><p>Need reflectance that stays comparable season to season.</p></div></li>
-        </ol>
-      </aside>
-    </div>
-  </section>
-
-  <section class="chapter-section">
-    <div class="container chapter-shell">
-      <aside class="chapter-meta">
-        <div class="eyebrow">What it does</div>
-        <h2>Atmospheric correction, done properly.</h2>
-        <p>Satellite sensors measure light that has passed through the atmosphere twice. SIAC models that journey using radiative transfer physics to recover what the surface actually looks like.</p>
-      </aside>
-      <div class="chapter-body row-list">
-        <article class="row-panel">
-          <div class="row-label">The problem</div>
-          <div>
-            <h3>Raw satellite data isn't ready for analysis.</h3>
-            <p>Clouds, haze, aerosol loads, and water vapour change what the sensor sees from day to day and place to place. Without correction, comparing images from different dates or sensors is unreliable.</p>
-          </div>
-        </article>
-        <article class="row-panel">
-          <div class="row-label">How SIAC works</div>
-          <div>
-            <h3>Physics-based atmospheric modelling.</h3>
-            <p>SIAC estimates the atmospheric state for each image using a combination of auxiliary data and radiative transfer inversion. It then removes the atmospheric contribution to produce surface reflectance &mdash; without relying on machine learning or empirical look-up tables.</p>
-          </div>
-        </article>
-        <article class="row-panel">
-          <div class="row-label">What you get</div>
-          <div>
-            <h3>Reflectance you can trust and compare.</h3>
-            <p>Consistent surface reflectance across Sentinel-2, Landsat, and selected commercial sensors. A stable input layer for vegetation monitoring, change detection, crop modelling, and any downstream analytics.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="chapter-section alt">
-    <div class="container chapter-shell">
-      <aside class="chapter-meta">
-        <div class="eyebrow">In the stack</div>
-        <h2>SIAC feeds everything downstream.</h2>
-      </aside>
-      <div class="chapter-body">
-        <article class="layer-band red">
-          <div class="layer-no">S</div>
-          <div>
-            <div class="band-header"><h3>The foundation of the RayX chain</h3><div class="band-role">Layer 01 of 03</div></div>
-            <p class="band-copy">SIAC sits at the start of the workflow. Better atmospheric correction means ARC receives a cleaner signal for crop interpretation, and Yield receives more trustworthy evidence for forecasting. But SIAC also works standalone &mdash; if all you need is better reflectance, it delivers that on its own.</p>
-            <div class="band-actions">
-              <a class="btn btn-light" href="/products/arc.html">Next: ARC &rarr;</a>
-              <a class="btn btn-light" href="/technology.html">See the full chain</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-masthead">
-    <div class="container">
-      <div class="footer-cta quiet-cta">
-        <div class="eyebrow">Get started with SIAC</div>
-        <h2>Tell us about your sensor data and we'll show you what SIAC can do.</h2>
-        <p>Share your satellite sources, region of interest, and downstream use case. We can run a demonstration on your data.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="/contact.html">Get in touch</a>
-          <a class="btn btn-secondary" href="/use-cases.html">See use cases</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-copy"><img class="footer-logo" src="/assets/img/rayx-logo-white.png" alt="RayX"><p>RayX turns satellite imagery into crop intelligence you can trust &mdash; from atmospheric correction through crop modelling to yield forecasting. Built on physics, not black boxes.</p></div>
-    <div class="footer-nav">
-      <div><div class="footer-title">Products</div><a href="/products/siac.html">SIAC</a><a href="/products/arc.html">ARC</a><a href="/products/yield.html">Yield</a></div>
-      <div><div class="footer-title">Company</div><a href="/technology.html">Technology</a><a href="/use-cases.html">Use cases</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
-    </div>
-  </div>
-  <div class="container footer-bottom"><div>&copy; <span id="year"></span> RayX Ltd. All rights reserved.</div><div>London, UK</div></div>
-</footer>
-<script src="/assets/js/main.js"></script>
+  <p>Redirecting to <a href="/#chain">rayx.co.uk</a>…</p>
 </body>
 </html>
