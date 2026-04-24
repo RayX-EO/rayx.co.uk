@@ -327,10 +327,6 @@ h1 em{font-style:normal;font-weight:300;color:var(--text-muted)}
   font-family:'JetBrains Mono',ui-monospace,monospace;
   font-size:10.5px;color:rgba(255,255,255,.4);letter-spacing:.06em;
 }
-.dark-ray{position:absolute;inset:0;opacity:.5;pointer-events:none}
-.dark-ray .xray::before{background:linear-gradient(90deg,transparent 10%,rgba(255,255,255,.04) 32%,rgba(255,255,255,.88) 50%,rgba(143,130,212,.3) 68%,transparent 90%)}
-.dark-ray .xray::after{background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),rgba(255,255,255,.5),rgba(255,255,255,.04),transparent)}
-
 /* Use cases --------------------------------------------------------------- */
 .use-section{padding:24px 0 160px}
 .use-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,460px);gap:60px;align-items:end;margin-bottom:42px}
