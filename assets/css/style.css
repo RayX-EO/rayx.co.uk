@@ -275,22 +275,24 @@ h1 em{font-style:normal;font-weight:300;color:var(--text-muted)}
 .chain-card .cc-tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);font-weight:600}
 .chain-card h2{font-size:72px;font-weight:300;letter-spacing:-.065em;line-height:.9;margin-top:auto;color:var(--deep)}
 .chain-card .cc-lede{font-size:15.5px;line-height:1.45;color:var(--text-muted);margin-top:14px;max-width:300px}
-.chain-card .cc-viz{
-  height:82px;margin-top:22px;border-top:1px dashed var(--line);padding-top:14px;
-  position:relative;color:var(--text-subtle);
-}
-.chain-card .cc-viz svg{width:100%;height:100%}
 .chain-card .cc-metric{
-  position:absolute;top:14px;right:0;
+  display:block;width:100%;text-align:right;
+  margin-top:22px;padding-bottom:10px;
+  border-bottom:1px dashed var(--line);
   font-family:'JetBrains Mono',ui-monospace,monospace;
   font-size:10.5px;letter-spacing:.06em;color:var(--text-muted);
 }
+.chain-card .cc-viz{
+  height:72px;margin-top:6px;
+  position:relative;color:var(--text-subtle);
+}
+.chain-card .cc-viz svg{width:100%;height:100%}
 .chain-card.active{background:var(--deep);color:#fff;border-color:var(--deep)}
 .chain-card.active h2{color:#fff}
 .chain-card.active .cc-step,.chain-card.active .cc-tag{color:#AEB7C5}
 .chain-card.active .cc-lede{color:#CDD3DE}
-.chain-card.active .cc-viz{border-top-color:rgba(255,255,255,.18);color:#AEB7C5}
-.chain-card.active .cc-metric{color:#CDD3DE}
+.chain-card.active .cc-viz{color:#AEB7C5}
+.chain-card.active .cc-metric{color:#CDD3DE;border-bottom-color:rgba(255,255,255,.18)}
 
 /* Dark split-section ------------------------------------------------------ */
 .split-section{
