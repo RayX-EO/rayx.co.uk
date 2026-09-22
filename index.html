@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXYYG3BB6R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WXYYG3BB6R');
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050B16" />
+  <title>RayX — Field-level crop yield intelligence</title>
+  <meta name="description" content="A trustworthy measurement layer for farmland, starting with crop yield. Field history plus in-season GB wheat and US maize forecasts, live today." />
+  <link rel="canonical" href="https://www.rayx.co.uk/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RayX" />
+  <meta property="og:url" content="https://www.rayx.co.uk/" />
+  <meta property="og:title" content="RayX — Every field, measured." />
+  <meta property="og:description" content="A trustworthy measurement layer for farmland, starting with crop yield. Field Passports and in-season wheat and maize forecasts, live today." />
+  <meta property="og:image" content="https://www.rayx.co.uk/assets/img/og-rayx.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="RayX — Every field, measured." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon system (RayX quiet optical set) -->
+  <link rel="icon"             href="/favicon.ico" sizes="any" />
+  <link rel="icon"             href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180"    href="/apple-touch-icon.png" />
+  <link rel="mask-icon"        href="/favicon.svg" color="#050B16" />
+  <link rel="manifest"         href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://rsms.me" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RayX Ltd",
+    "url": "https://www.rayx.co.uk/",
+    "logo": "https://www.rayx.co.uk/favicon-512.png",
+    "email": "contact@rayx.co.uk",
+    "description": "UK agricultural intelligence company building a trustworthy measurement layer for farmland, starting with crop yield.",
+    "founder": { "@type": "Person", "name": "Dr Feng Yin" },
+    "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header" aria-label="Primary">
+    <a class="brand" href="#top" aria-label="RayX home">
+      <img class="brand-mark" src="/assets/img/rayx-wordmark.svg" alt="RayX" width="107" height="31" />
+    </a>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="#mission">Why it matters</a>
+      <a href="#services">Live today</a>
+      <a href="#trust">Why trust it</a>
+      <a href="#partner">Work with us</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero section-bleed">
+      <div class="hero-copy">
+        <a class="hero-tag" href="#services">
+          <span class="dot"></span> Live · 2026 forecasts for GB wheat and US maize <span class="arr">→</span>
+        </a>
+        <h1>Every field,<br />measured.</h1>
+        <p class="hero-lede">
+          RayX is building a trustworthy measurement layer for farmland, starting with crop yield — so every field can be measured, compared and audited from space.
+        </p>
+        <div class="hero-actions">
+          <a class="button dark" href="#partner">Work with us <span class="arr">→</span></a>
+          <a class="button light" href="#services">See what's live</a>
+        </div>
+      </div>
+
+      <figure class="hero-figure">
+        <div class="hero-visual" aria-hidden="true">
+          <img class="hero-map" src="/assets/img/hero-wheat-fields.webp" alt="" width="900" height="948" decoding="async" />
+          <span class="axis tl">FIELD-LEVEL YIELD · EAST ANGLIA</span>
+          <span class="axis tr">WK OF 17 AUG 2026</span>
+          <span class="axis bl legend">YIELD t/ha <span class="ramp"></span> 4–10</span>
+          <span class="axis br">COPERNICUS SENTINEL-2</span>
+
+          <div class="xray">
+            <span class="halo"></span>
+            <span class="flare"></span>
+          </div>
+
+          <div class="platform-card pc-a">
+            <div class="pc-head"><span>GB winter wheat</span><span class="pc-dot"></span></div>
+            <div class="pc-val">7.70 <span class="pc-unit">t/ha</span></div>
+            <div class="pc-sub">90% band 7.13–8.28 · 17 Aug</div>
+            <div class="band">
+              <!-- scale 6.9–8.5 t/ha mapped to x 4–156 -->
+              <svg viewBox="0 0 160 22">
+                <line x1="4" y1="11" x2="156" y2="11" stroke="#D6DCE5" stroke-width="1" stroke-dasharray="2 3"/>
+                <rect x="25.9" y="6" width="109.2" height="10" rx="5" fill="#B9C8E2" opacity=".55"/>
+                <line x1="25.9" y1="4" x2="25.9" y2="18" stroke="#6A86B6" stroke-width="1"/>
+                <line x1="135.1" y1="4" x2="135.1" y2="18" stroke="#6A86B6" stroke-width="1"/>
+                <circle cx="80" cy="11" r="3.4" fill="#0A0D12"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="platform-card pc-c">
+            <div class="pc-head"><span>US maize</span><span class="pc-dot"></span></div>
+            <div class="pc-val">201.9 <span class="pc-unit">bu/ac</span></div>
+            <div class="pc-sub">Corn Belt · 7 Sep</div>
+          </div>
+
+          <div class="platform-card pc-b">
+            <div class="pc-head"><span>Field Passport</span><span class="pc-dot"></span></div>
+            <div class="pc-val">1.9 <span class="pc-unit">t/ha</span></div>
+            <div class="pc-sub">still to gain · demo farm, by cause</div>
+            <div class="mix">
+              <span class="m1" style="width:53%"></span>
+              <span class="m2" style="width:15%"></span>
+              <span class="m3" style="width:12%"></span>
+              <span class="m4" style="width:11%"></span>
+              <span class="m5" style="width:8%"></span>
+              <span class="m6" style="width:1%"></span>
+            </div>
+          </div>
+        </div>
+        <figcaption class="hero-note">Real outputs: 2026 GB winter-wheat field yields in East Anglia (UCL · NCEO · UKCEH · AgZero+), with figures from the GB wheat, US maize and Field Passport services.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 01 WHY IT MATTERS -->
+    <section id="mission" class="why-section">
+      <div class="section-label">
+        <span class="idx">01 /</span>
+        <span class="title">WHY IT MATTERS</span>
+      </div>
+      <div class="why-head">
+        <h2>Decisions are made months before the harvest is counted.</h2>
+        <p>Official yield figures arrive long after the crop is cut, and satellite estimates rarely show how they were made. RayX can issue weekly from May — field by field, with intervals, and a record that can't quietly change.</p>
+      </div>
+
+      <figure class="tl">
+        <figcaption class="sr-only">2026 season timeline: RayX can start forecasting from May; in 2026 it published weekly winter-wheat issues from 13 July to 17 August, with a yield cutoff on 1 August and a frozen call on 17 August. Harvest ran from late July to mid-September. Defra's provisional estimate for England is expected in October and the UK final in December.</figcaption>
+        <div class="tl-plot" aria-hidden="true">
+          <span class="tl-lbl row1 cut" style="left:45.4%">Yield cutoff · 1 Aug</span>
+          <span class="tl-lbl row1 frz" style="left:50.15%">Frozen call · 17 Aug</span>
+          <span class="tl-vline dashed" style="left:45.4%"></span>
+          <span class="tl-vline solid" style="left:50.15%"></span>
+
+          <span class="tl-lbl row2 rx" style="left:18.1%">RayX · forecasts from May</span>
+          <span class="tl-band cap" style="left:18.1%;width:21.6%"></span>
+          <span class="tl-cap-note" style="right:calc(60.8% + 10px)">2026: from 13 Jul →</span>
+          <span class="tl-band" style="left:39.2%;width:10.95%"></span>
+          <i class="tl-tick" style="left:39.76%"></i>
+          <i class="tl-tick" style="left:41.84%"></i>
+          <i class="tl-tick" style="left:43.92%"></i>
+          <i class="tl-tick" style="left:45.99%"></i>
+          <i class="tl-tick" style="left:48.07%"></i>
+          <span class="tl-dot" style="left:50.15%"></span>
+
+          <span class="tl-lbl row2 df" style="left:65.88%">Defra · England provisional</span>
+          <span class="tl-ring" style="left:65.88%"></span>
+          <span class="tl-lbl row2 uk" style="left:81.6%">Defra · UK final</span>
+          <span class="tl-box" style="left:81.6%;width:8.9%"></span>
+
+          <span class="tl-harvest" style="left:41.84%;width:16.91%">Harvest</span>
+
+          <div class="tl-axis">
+            <span style="left:0%">Mar</span><span style="left:9.2%">Apr</span><span style="left:18.1%">May</span><span style="left:27.3%">Jun</span><span style="left:36.2%">Jul</span><span style="left:45.4%">Aug</span><span style="left:54.6%">Sep</span><span style="left:63.5%">Oct</span><span style="left:72.7%">Nov</span><span style="left:81.6%">Dec</span><span style="left:90.8%">Jan ’27</span>
+          </div>
+        </div>
+        <ol class="tl-list" aria-hidden="true">
+          <li class="cap"><b>From May</b><span>RayX · forecasts can start</span></li>
+          <li class="rx"><b>13 Jul – 17 Aug</b><span>RayX · 2026 weekly issues, field by field</span></li>
+          <li class="hv"><b>Late Jul – mid Sep</b><span>Harvest</span></li>
+          <li><b>1 Aug</b><span>Yield cutoff</span></li>
+          <li class="call"><b>17 Aug</b><span>Frozen call</span></li>
+          <li class="df"><b>October</b><span>Defra · England provisional</span></li>
+          <li class="df"><b>December</b><span>Defra · UK final</span></li>
+        </ol>
+      </figure>
+      <p class="tl-note">2026 season · The 2024 UK final was published on 12 December 2024 — and official figures are themselves revised</p>
+
+      <div class="mission-card">
+        <div>
+          <span class="eyebrow">What we're working towards</span>
+          <h3>Every crop field measured, compared and audited from space — starting with wheat and maize.</h3>
+        </div>
+        <p>One consistent, independent record of what land has produced, is producing and could produce — whoever farms it, and whatever records they keep.</p>
+      </div>
+    </section>
+
+    <!-- 02 WHAT WE HAVE -->
+    <section id="services" class="svc-section">
+      <div class="section-label">
+        <span class="idx">02 /</span>
+        <span class="title">WHAT WE HAVE</span>
+      </div>
+      <div class="svc-head">
+        <h2>Live today, in the UK and the US.</h2>
+        <p>Field Passports, plus in-season forecasts for GB wheat and US maize, validated against harvester yield data. Open them, explore, then tell us what you'd need.</p>
+      </div>
+
+      <div class="glance" role="group" aria-label="2026 figures from the live services">
+        <figure class="glance-cell">
+          <figcaption class="g-k">GB wheat · area by region</figcaption>
+          <p class="g-v">1.56 <span>Mha mapped · 200,161 fields</span></p>
+          <ul class="bars wheat">
+            <li><span class="b-l">East of England</span><span class="b-t"><i style="width:100%"></i></span><span class="b-v">412</span></li>
+            <li><span class="b-l">East Midlands</span><span class="b-t"><i style="width:69.8%"></i></span><span class="b-v">287</span></li>
+            <li><span class="b-l">Yorkshire &amp; Humber</span><span class="b-t"><i style="width:49.6%"></i></span><span class="b-v">204</span></li>
+            <li><span class="b-l">South East</span><span class="b-t"><i style="width:45.2%"></i></span><span class="b-v">186</span></li>
+            <li><span class="b-l">West Midlands</span><span class="b-t"><i style="width:31.4%"></i></span><span class="b-v">129</span></li>
+            <li><span class="b-l">South West</span><span class="b-t"><i style="width:31.3%"></i></span><span class="b-v">129</span></li>
+          </ul>
+          <p class="g-n">Thousand hectares, top six regions · issue of 17 Aug 2026</p>
+        </figure>
+        <figure class="glance-cell">
+          <figcaption class="g-k">US maize · production by state</figcaption>
+          <p class="g-v">203.6 <span>Mt forecast · 474 counties</span></p>
+          <ul class="bars maize">
+            <li><span class="b-l">Iowa</span><span class="b-t"><i style="width:100%"></i></span><span class="b-v">68.5</span></li>
+            <li><span class="b-l">Illinois</span><span class="b-t"><i style="width:81.3%"></i></span><span class="b-v">55.7</span></li>
+            <li><span class="b-l">Minnesota</span><span class="b-t"><i style="width:66%"></i></span><span class="b-v">45.2</span></li>
+            <li><span class="b-l">Wisconsin</span><span class="b-t"><i style="width:26.1%"></i></span><span class="b-v">17.9</span></li>
+            <li><span class="b-l">Missouri</span><span class="b-t"><i style="width:23.7%"></i></span><span class="b-v">16.2</span></li>
+          </ul>
+          <p class="g-n">Million tonnes · issue of 7 Sep 2026</p>
+        </figure>
+        <figure class="glance-cell">
+          <figcaption class="g-k">Field Passport · where the gap comes from</figcaption>
+          <p class="g-v">1.9 <span>t/ha still to gain · demo farm</span></p>
+          <div class="stack" aria-hidden="true">
+            <i class="m1" style="width:53.2%"></i><i class="m2" style="width:15.1%"></i><i class="m3" style="width:11.8%"></i><i class="m4" style="width:10.8%"></i><i class="m5" style="width:7.5%"></i><i class="m6" style="width:1.6%"></i>
+          </div>
+          <ul class="legend">
+            <li><i class="m1"></i>Management <b>0.99</b></li>
+            <li><i class="m2"></i>Weather <b>0.28</b></li>
+            <li><i class="m3"></i>Rotation <b>0.22</b></li>
+            <li><i class="m4"></i>Slope <b>0.20</b></li>
+            <li><i class="m5"></i>Field margins <b>0.14</b></li>
+            <li><i class="m6"></i>Soil <b>0.03</b></li>
+          </ul>
+          <p class="g-n">t/ha by likely cause · 15 fields, 2018–2025</p>
+        </figure>
+      </div>
+
+      <div class="svc-grid">
+        <article class="svc-card">
+          <figure class="shot">
+            <div class="shot-bar" aria-hidden="true"><span class="shot-dots"><i></i><i></i><i></i></span><span class="shot-url">passport.rayx.co.uk</span></div>
+            <img src="/assets/img/passport-demo.webp"
+                 srcset="/assets/img/passport-demo-900.webp 900w, /assets/img/passport-demo.webp 1600w"
+                 sizes="(max-width: 980px) 100vw, 600px"
+                 width="1600" height="1000" loading="lazy" decoding="async"
+                 alt="Field Passport demo: satellite map of a 15-field farm shaded by yield achieved, beside a panel showing 1.9 t/ha still to gain and a breakdown of likely causes." />
+            <figcaption>Illustrative portfolio: real fields and satellite-derived figures (2018–2025), grouped into a farm for demonstration. Imagery © Esri.</figcaption>
+          </figure>
+          <div class="svc-body">
+            <div class="svc-top">
+              <span class="svc-step">01 / HISTORY</span>
+              <span class="live"><span class="dot"></span>Live</span>
+            </div>
+            <h3>Field Passports</h3>
+            <p class="svc-q">How has this field actually performed?</p>
+            <p class="svc-text">Season-by-season yield for every field, how stable it is, how far it sits from comparable fields nearby, and the likely reason — management, weather, rotation, slope, margins or soil.</p>
+            <dl class="svc-specs">
+              <div><dt>Scale</dt><dd>Field and sub-field</dd></div>
+              <div><dt>Shows</dt><dd>Yield, stability, gap to best, likely cause</dd></div>
+              <div><dt>For</dt><dd>Agronomists, lenders, land agents, valuers</dd></div>
+            </dl>
+            <div class="svc-actions">
+              <a class="button dark" href="https://passport.rayx.co.uk/" target="_blank" rel="noopener">Open the demo <span class="arr">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <figure class="shot">
+            <div class="shot-bar" aria-hidden="true"><span class="shot-dots"><i></i><i></i><i></i></span><span class="shot-url">wheat.rayx.co.uk</span></div>
+            <img src="/assets/img/wheat-forecast.webp"
+                 srcset="/assets/img/wheat-forecast-900.webp 900w, /assets/img/wheat-forecast.webp 1600w"
+                 sizes="(max-width: 980px) 100vw, 600px"
+                 width="1600" height="1000" loading="lazy" decoding="async"
+                 alt="2026 UK winter-wheat forecast: headline area, yield and production with 90% bands, above a field-level yield map of East Anglia." />
+            <figcaption>2026 GB forecast, week of 17 Aug. Produced with UCL and NCEO, with UKCEH, as part of the AgZero+ project. Basemap © OpenStreetMap contributors.</figcaption>
+          </figure>
+          <div class="svc-body">
+            <div class="svc-top">
+              <span class="svc-step">02 / FORECAST · GB</span>
+              <span class="live"><span class="dot"></span>Live</span>
+            </div>
+            <h3>GB wheat forecast</h3>
+            <p class="svc-q">What will this field, county or country produce?</p>
+            <p class="svc-text">Winter-wheat area, yield and production every week of the season — from a single field up to Great Britain, each with a 90% band that narrows towards harvest.</p>
+            <dl class="svc-specs">
+              <div><dt>Levels</dt><dd>Field, county, region, nation</dd></div>
+              <div><dt>Updates</dt><dd>Weekly, with a dated, auditable issue</dd></div>
+              <div><dt>For</dt><dd>Grain buyers, processors, traders, agronomy</dd></div>
+            </dl>
+            <div class="svc-actions">
+              <a class="button dark" href="https://wheat.rayx.co.uk/" target="_blank" rel="noopener">See the wheat forecast <span class="arr">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card wide">
+          <figure class="shot">
+            <div class="shot-bar" aria-hidden="true"><span class="shot-dots"><i></i><i></i><i></i></span><span class="shot-url">maize.rayx.co.uk</span></div>
+            <img src="/assets/img/maize-forecast.webp"
+                 srcset="/assets/img/maize-forecast-900.webp 900w, /assets/img/maize-forecast.webp 1600w"
+                 sizes="(max-width: 980px) 100vw, 680px"
+                 width="1600" height="1000" loading="lazy" decoding="async"
+                 alt="2026 US maize forecast: headline corn area, yield and production, above a 10 m field-level corn yield map of farmland in north Iowa." />
+            <figcaption>2026 US maize forecast, issue of 7 Sep: 10 m field forecast of corn yield in north Iowa. Basemap © OpenStreetMap contributors.</figcaption>
+          </figure>
+          <div class="svc-body">
+            <div class="svc-top">
+              <span class="svc-step">03 / FORECAST · US</span>
+              <span class="live"><span class="dot"></span>Live</span>
+            </div>
+            <h3>US maize forecast</h3>
+            <p class="svc-q">How much corn is coming, and from where?</p>
+            <p class="svc-text">Corn area, yield and production across the core Corn Belt — Iowa, Illinois, Minnesota, Missouri and Wisconsin — from state and county down to the field.</p>
+            <dl class="svc-specs">
+              <div><dt>Coverage</dt><dd>474 counties in five states</dd></div>
+              <div><dt>Levels</dt><dd>State, county, field (10 m)</dd></div>
+              <div><dt>Licence</dt><dd>Free for research (CC BY-NC 4.0); commercial licences from RayX</dd></div>
+              <div><dt>For</dt><dd>Grain traders, merchants, processors, risk desks</dd></div>
+            </dl>
+            <div class="svc-actions">
+              <a class="button dark" href="https://maize.rayx.co.uk/" target="_blank" rel="noopener">See the maize forecast <span class="arr">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <article class="svc-strip">
+        <div class="strip-copy">
+          <div class="svc-top"><span class="svc-step">04 / INTEGRATION</span></div>
+          <h3>Data and API</h3>
+          <p class="svc-text">Put field-level yield history and forecasts inside the agronomy, farm-management and decision-support tools your customers already use.</p>
+        </div>
+        <ul class="strip-specs">
+          <li>CSV, API or bulk delivery</li>
+          <li>Field to national level</li>
+          <li>Uncertainty on every value</li>
+        </ul>
+        <a class="button light" href="mailto:contact@rayx.co.uk?subject=RayX%20data%20and%20API">Discuss integration <span class="arr">→</span></a>
+      </article>
+    </section>
+
+    <!-- 03 WHY TRUST IT -->
+    <section id="trust" class="split-section dark-panel" aria-labelledby="trust-title">
+      <div>
+        <span class="eyebrow inverse">Why trust it</span>
+        <h2 id="trust-title">Built on physics. Designed for trust.</h2>
+        <p class="lede">
+          An independent, consistent view of what land has produced and what it is likely to produce — and the evidence to show why.
+        </p>
+      </div>
+      <div class="proof-grid">
+        <div class="proof-item">
+          <span class="label">Traceable</span>
+          <p>Every value links back to the satellite observations behind it, with a dated record of each issue.</p>
+          <span class="ref">01</span>
+        </div>
+        <div class="proof-item">
+          <span class="label">Uncertainty</span>
+          <p>A 90% band on every estimate, narrowing as the season firms up.</p>
+          <span class="ref">02</span>
+        </div>
+        <div class="proof-item">
+          <span class="label">Validated</span>
+          <p>Checked against harvester yield data at field level.</p>
+          <span class="ref">03</span>
+        </div>
+        <div class="proof-item">
+          <span class="label">Independent</span>
+          <p>One consistent method across every field and season — even where farm records are incomplete.</p>
+          <span class="ref">04</span>
+        </div>
+      </div>
+
+      <!-- Decorative flare — confined to the left column so it doesn't overlap proof items -->
+      <div class="dark-ray" aria-hidden="true">
+        <div class="xray"><span class="flare"></span></div>
+      </div>
+    </section>
+
+    <!-- 04 WORK WITH US -->
+    <section id="partner" class="ask-section">
+      <div class="section-label">
+        <span class="idx">04 /</span>
+        <span class="title">WHAT WE'RE LOOKING FOR</span>
+      </div>
+      <div class="use-head">
+        <h2>Build this with us.</h2>
+        <p>RayX is early, and the partners who join now shape what gets built next. If one of these is you, we'd like to talk.</p>
+      </div>
+      <div class="ask-list">
+        <article class="ask">
+          <div>
+            <h3>Pilot partners</h3>
+            <span class="who">Platforms · grain buyers · lenders</span>
+          </div>
+          <p>Agronomy and farm-software platforms to evaluate Field Passports across their fields. Grain buyers, processors and traders to run a season of wheat or maize forecasts against their current view. Lenders and land agents to test field history on real decisions.</p>
+          <a class="go" href="mailto:contact@rayx.co.uk?subject=RayX%20pilot">Discuss a pilot <span class="arr">→</span></a>
+        </article>
+        <article class="ask">
+          <div>
+            <h3>Farms and farmer groups</h3>
+            <span class="who">Yield maps · field records</span>
+          </div>
+          <p>Share combine yield maps and field records to sharpen our validation. In return, you get free field reports and in-season forecasts for your farm.</p>
+          <a class="go" href="mailto:contact@rayx.co.uk?subject=RayX%20farm%20data%20partnership">Get involved <span class="arr">→</span></a>
+        </article>
+        <article class="ask">
+          <div>
+            <h3>Research and consortium partners</h3>
+            <span class="who">Science · trials · knowledge exchange</span>
+          </div>
+          <p>Environmental-science, crop-research and knowledge-exchange partners for collaborative R&amp;D and on-farm trials.</p>
+          <a class="go" href="mailto:contact@rayx.co.uk?subject=RayX%20research%20partnership">Propose a project <span class="arr">→</span></a>
+        </article>
+        <article class="ask">
+          <div>
+            <h3>Investors</h3>
+            <span class="who">Pre-seed / seed</span>
+          </div>
+          <p>We're preparing our first round and welcome conversations with agri-food, climate and Earth-observation investors.</p>
+          <a class="go" href="mailto:contact@rayx.co.uk?subject=RayX%20investment">Talk to us <span class="arr">→</span></a>
+        </article>
+        <article class="ask">
+          <div>
+            <h3>RayX Field testers</h3>
+            <span class="who">Farmers · early access</span>
+          </div>
+          <p>Farmers who'd like early access to the RayX Field app. Send us a note and we'll add you to the test list.</p>
+          <a class="go" href="mailto:contact@rayx.co.uk?subject=RayX%20Field%20testing">Join the test list <span class="arr">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 05 ABOUT -->
+    <section id="about" class="about-section">
+      <div class="section-label">
+        <span class="idx">05 /</span>
+        <span class="title">ABOUT RAYX</span>
+      </div>
+      <div class="about-grid">
+        <h2>A decade of research, now live.</h2>
+        <div class="about-copy">
+          <p>RayX is a UK agricultural intelligence company founded by Dr Feng Yin and developed from nearly a decade of Earth-observation research at UCL and the National Centre for Earth Observation (NCEO).</p>
+          <p>Built on satellite Earth observation, it gives an independent view of what land has produced, what it is likely to produce, where performance is persistently strong or weak, and how weather and management shape the outcome.</p>
+        </div>
+      </div>
+      <div class="about-facts">
+        <div>
+          <span class="k">UCL · NCEO</span>
+          <p>Research heritage in Earth observation and crop science.</p>
+        </div>
+        <div>
+          <span class="k">SIAC</span>
+          <p>Open-source atmospheric correction developed by our founder — <a href="https://gmd.copernicus.org/articles/15/7933/2022/" target="_blank" rel="noopener">peer-reviewed</a> and assessed in the international ACIX-II intercomparison.</p>
+        </div>
+        <div>
+          <span class="k">UKCEH · AgZero+</span>
+          <p>Partners on the 2026 GB winter-wheat forecast, produced with UCL and NCEO.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE VOICE -->
+    <section class="signature-section">
+      <h2>Less black box. <span>More signal.</span></h2>
+      <div class="signature-ray" aria-hidden="true"><span class="node"></span></div>
+      <p class="voice">Clarity in every signal &nbsp;·&nbsp; Confidence in every decision</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="contact-card">
+        <div>
+          <span class="eyebrow">Get in touch</span>
+          <h2>Tell us what you're working on.</h2>
+          <p>A pilot, farm data, a research project or an investment — the first step is a conversation.</p>
+        </div>
+        <div class="actions">
+          <a class="button dark" href="mailto:contact@rayx.co.uk?subject=RayX%20conversation">contact@rayx.co.uk <span class="arr">→</span></a>
+          <span class="meta">LONDON · UK · RAYX LTD</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand small-brand" href="#top" aria-label="RayX home">
+      <img class="brand-mark" src="/assets/img/rayx-wordmark.svg" alt="RayX" width="87" height="25" loading="lazy" />
+    </a>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="https://passport.rayx.co.uk/" target="_blank" rel="noopener">Field Passports ↗</a>
+      <a href="https://wheat.rayx.co.uk/" target="_blank" rel="noopener">Wheat forecast ↗</a>
+      <a href="https://maize.rayx.co.uk/" target="_blank" rel="noopener">Maize forecast ↗</a>
+      <a href="#about">About</a>
+      <a href="mailto:contact@rayx.co.uk">contact@rayx.co.uk</a>
+    </nav>
+    <p class="fine">© 2026 RAYX LTD</p>
+  </footer>
+</body>
+</html>
